@@ -1,5 +1,8 @@
 \documentclass{beamer}
 
+\usepackage{tikz}           
+\usetikzlibrary{positioning, arrows.meta, matrix}
+
 \title{Low-cost perfusion pump}
 \subtitle{Multidisciplinary design (GM1)}
 \author{L. Buxton \and L. McKiernan \and I. Henry \and L. Payne \and T. Azam}
@@ -12,8 +15,22 @@
 
 \frame{
     \frametitle{Motivation}
-}
 
+    Collagen-based artificial vessels have applications in haemodialysis and as grafts in bypass surgery.
+
+    \begin{itemize}
+        \item Haemodialysis involves removing blood for processing in a dialyser, then replacing
+              \begin{itemize}
+                  \item Requires reliable vascular access that tolerates high blood flow rates
+                  \item Natural arteriovenous fistulas enable this, but are difficult to achieve in the elderly
+                  \item Artificial grafts using synthetic vessels bypass the need for a suitable native vein
+              \end{itemize}
+        \item Bypass sugery involves creating new routes for blood
+              \begin{itemize}
+                  \item Artificial grafts offer standardisation and greater availability
+              \end{itemize}
+    \end{itemize}
+}
 
 
 \frame{
