@@ -9,4 +9,37 @@
 \begin{document}
 
 \frame{\titlepage}
+
+\frame{
+    \frametitle{Motivation}
+}
+
+
+
+\frame{
+    \frametitle{Software}
+
+    \begin{itemize}
+        \item Customise the target pressure profile
+              \begin{itemize}
+                  \item via physiological parameters (e.g., heart rate, systolic/diastolic pressures)
+                  \item via body state (e.g., age, sex, rest vs. exercise)
+                  \item via vessel type (e.g., artery, capillary, vein)
+              \end{itemize}
+        \item View a live trace of the pressure sensor reading at the test start point
+              \begin{itemize}
+                  \item including the (cumulative) error (esp. during the syringe transition) and uptime
+              \end{itemize}
+        \item Set schedules for operation
+              \begin{itemize}
+                  \item e.g. ramping pressure profile to test vessel integrity
+              \end{itemize}
+        \item Flag extreme pressure values
+              \begin{itemize}
+                  \item e.g., loss of pressure from a sudden vessel rupture
+                  \item e.g., increase in pressure from a blockage in the system from clotting
+              \end{itemize}
+        \item Export data traces as CSV
+    \end{itemize}
+}
 \end{document}
