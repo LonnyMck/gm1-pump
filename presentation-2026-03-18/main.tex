@@ -168,24 +168,26 @@
     \small
     \begin{tabular}{lll}
         \hline
-        \textbf{item}              & \textbf{qty.} & \textbf{unit cost (£)} \\
+        \textbf{item}               & \textbf{qty.} & \textbf{unit cost (£)} \\
         \hline
-        microcontroller            & 1             & 20                     \\
-        power board                & 1             & 20                     \\
-        screw lead (incl. stepper) & 2             & 15                     \\
-        pressure sensors           & 2             & 10                     \\
-        one-way valves             & 4             & 2                      \\
-        3/2 valves                 & 2             & 10                     \\
-        pinch valves               & 2             & 20                     \\
-        syringes                   & 2+            & 1                      \\
-        tubing                     & ---           & 10                     \\
+        microcontroller             & 1             & 20                     \\
+        power board                 & 1             & 20                     \\
+        lead screw \& stepper motor & 2             & 15                     \\
+        pressure sensors            & 2             & 10                     \\
+        one-way valves              & 4             & 2                      \\
+        3/2 valves                  & 2             & 10                     \\
+        pinch valves                & 2             & 20                     \\
+        syringes                    & 2+            & 1                      \\
+        tubing                      & ---           & 10                     \\
+        simple alphanumeric display & 1             & 10                     \\
+        T-type connectors           & ---           & 1                      \\
         \hline
-        \multicolumn{3}{l}{\textit{Departmental (no cost)}}                 \\
+        \multicolumn{3}{l}{\textit{Departmental}}                            \\
         \hline
-        3D printer                 & ---           & ---                    \\
-        housing material           & ---           & ---                    \\
+        3D printer                  & ---           & ---                    \\
+        housing material            & ---           & ---                    \\
         \hline
-        \textbf{total}             &               & \textbf{143}           \\
+        \textbf{total}              &               & $\sim$\textbf{150}     \\
         \hline
     \end{tabular}
 }
@@ -198,22 +200,25 @@
     \small
     \begin{tabular}{lll}
         \hline
-        \textbf{item}              & \textbf{qty.} & \textbf{unit cost (£)} \\
+        \textbf{item}               & \textbf{qty.} & \textbf{unit cost (£)} \\
         \hline
-        microcontroller            & 1             & 5--20                  \\
-        power board                & 1             & 10--20                 \\
-        screw lead (incl. stepper) & 2             & 15                     \\
-        pressure sensors           & 2             & 3--10                  \\
-        valves                     & 2--6          & 2                      \\
-        syringes                   & 2             & 1                      \\
-        tubing                     & ---           & ---                    \\
+        microcontroller             & 1             & 5--20                  \\
+        power board                 & 1             & 10--20                 \\
+        lead screw \& stepper motor & 2             & 15                     \\
+        pressure sensors            & 2             & 3--10                  \\
+        valves                      & 2--6          & 2                      \\
+        syringes                    & 2             & 1                      \\
+        tubing                      & ---           & ---                    \\
         \hline
-        \textbf{total}             &               & \textbf{50--100}       \\
+        \textbf{total}              &               & \textbf{50--100}       \\
+        \hline
+        commerical syringe pumps    &               & 250--3000              \\
         \hline
     \end{tabular}
 }
 
 \frame{
+    \frametitle{Timeline}
     \includegraphics[width=\textwidth]{images/gantt.jpg}
 }
 
@@ -226,7 +231,7 @@
         \item Design housing for motors, syringes, and reservoir
         \item Design and assemble connections for pressure sensors
         \item Design and assemble valve junctions valve junctions
-        \item Collect test data collection for control system parameter tuning
+        \item Data collection for control system parameter tuning
         \item Ensure final product is easy to 3D print and assemble, and that multiple pumps can be made and run at once
     \end{itemize}
 
@@ -267,7 +272,7 @@
     \frametitle{Mechanical: valves}
 
     \begin{itemize}
-        \item 2 one-way valves at syringe exit with the same cracking-pressure mechanism as in the heart
+        \item 2 one-way valves at syringe exit with the same cracking pressure mechanism as in the heart
         \item Optional 3/2 valve setup for more control
     \end{itemize}
 
@@ -480,15 +485,20 @@
             \end{itemize}
         \end{block}
 
+        \begin{block}{Electrical}
+            \begin{itemize}
+                \item Learn microcontroller software
+            \end{itemize}
+        \end{block}
+
+
+        \column{0.48\textwidth}
+
         \begin{block}{Control}
             \begin{itemize}
                 \item Build and test control system on simulated pressure waveforms
                 \item Characterise controller lag and amplitude response in real time
             \end{itemize}
-        \end{block}
-
-        \column{0.48\textwidth}
-        \begin{block}{Electrical}
         \end{block}
 
         \begin{block}{Software}
@@ -515,6 +525,13 @@
 \frame{
     \frametitle{References}
     \printbibliography[heading=none]
+}
+
+\frame{
+    \frametitle{Questions?}
+
+
+    \footnotesize Presentation source can be found at \underline{\href{www.github.com/tahmidazam/gm1-pump}{www.github.com/tahmidazam/gm1-pump}}.
 }
 
 \end{document}
