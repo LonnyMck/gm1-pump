@@ -1,23 +1,39 @@
 # Fdb version 4
-["xdvipdfmx"] 1773858647.60104 "main.xdv" "main.pdf" "main" 1773858647.85344 0
-  "main.xdv" 1773858647.59054 920 3f53061eef399aaef5bce2383ce19110 "xelatex"
+["xdvipdfmx"] 1773859144.44108 "main.xdv" "main.pdf" "main" 1773859144.6699 0
+  "main.xdv" 1773859144.42942 984 84f3de781269ff1d8c352a79f97f6dc7 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1773858647.40445 "/Users/tahmidazam/Documents/iia/gm1/gm1-pump/team-report-2026-03-20/main.tex" "main.xdv" "main" 1773858647.85327 0
-  "/Users/tahmidazam/Documents/iia/gm1/gm1-pump/team-report-2026-03-20/main.tex" 1773858647.19121 1681 411aa40a760baa405c2e3ca75d2c5d1b ""
+["xelatex"] 1773859144.25013 "/Users/tahmidazam/Documents/iia/gm1/gm1-pump/team-report-2026-03-20/main.tex" "main.xdv" "main" 1773859144.66962 0
+  "/Users/tahmidazam/Documents/iia/gm1/gm1-pump/team-report-2026-03-20/main.tex" 1773859144.03381 2110 7ca5e3deed0ad5bdc10132171a077f2c ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbr10.tfm" 1136768653 1304 95ad082f6791446dc43df559d5c79878 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbr17.tfm" 1136768653 1292 864850248589e7d3af41afc829d0eaf3 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbr8.tfm" 1136768653 1304 6f575d26e34fea6311d7ae3e9a5bf8d0 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrbx10.tfm" 1136768653 1276 96fc4f0f3a7e6743ff42c061c2134734 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrmi10.tfm" 1136768653 1544 20b33e3c0f9b0012adb04ac9d418afaa ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrmi8.tfm" 1136768653 1536 e5dc1fc92eaa02a077dfd8f5bb78f6ce ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrsl10.tfm" 1136768653 1504 ddfb912c594fbc2fb3c85d6fe11e64ed ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrsy10.tfm" 1136768653 1124 00df9b89c9eb5dfe10f722aab27b3560 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrsy8.tfm" 1136768653 1120 90e1ff57236ed6769cdb8e6d58469358 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty" 1734129479 7984 7dbb9280f03c0a315425f1b4f35d43ee ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty" 1572645307 1057 525c2192b5febbd8c1f662c9468335bb ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls" 1738182759 20144 63d8bacaf52e5abf4db3bc322373e1d4 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty" 1738182759 5275 0d62fb62162c7ab056e941ef18c5076d ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/base/size11.clo" 1738182759 8464 e73911cdcc738e82d6adccd28e654bb1 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/cmbright/cmbright.sty" 1295311441 5449 577672f71e72b506039e93617e342780 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/cmbright/omlcmbrm.fd" 1295311441 971 fc3ca0f473ef3ba42b92ded9deeea11e ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/cmbright/omscmbrs.fd" 1295311441 913 6f5c8d9c0442a5f4c6fb1114c7c0abd9 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/cmbright/ot1cmbr.fd" 1295311441 1208 84b694fa6094d71e1e1e5ed3bfc3ae34 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty" 1717359999 2671 70891d50dac933918b827d326687c6e8 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-xetex.def" 1716410060 31593 96a7f07a08af85a2bbfee2e0a9cdbb50 ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/preprint/authblk.sty" 1368488610 7016 985a983ce041cc8959cd31133cba0244 ""
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1759654375 5639807 f2490e5eb96f51bf9dbee85bc07eb6bd ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "main.aux" 1773858647.58895 147 e15d7661cc2b927192ef74b3efbefdf1 "xelatex"
-  "main.tex" 1773858647.19121 1681 411aa40a760baa405c2e3ca75d2c5d1b ""
+  "main.aux" 1773859144.42908 147 e15d7661cc2b927192ef74b3efbefdf1 "xelatex"
+  "main.tex" 1773859144.03381 2110 7ca5e3deed0ad5bdc10132171a077f2c ""
   (generated)
   "main.aux"
   "main.log"
