@@ -4,6 +4,7 @@
 \usepackage[OT1]{fontenc}
 \usepackage{authblk}
 \usepackage{siunitx}
+\usepackage{babel,csquotes,xpatch}
 \usepackage[backend=biber, style=numeric]{biblatex}
 \usepackage{multicol}
 \usepackage{amsmath}
@@ -11,7 +12,7 @@
 \title{
     Short Team Report\\[0.5em] 
     \Large Team 2: Low Cost Perfusion Pump\\[0.25em]  
-    \normalsize IIA: GM1 \textit{Multidisciplinary Design}
+    \normalsize Part IIA: \texttt{GM1} \textit{Multidisciplinary Design}
 }
 
 \author[1]{Tahmid Azam}
@@ -88,6 +89,7 @@ There is huge variation in the pressure profile, and the software plans to offer
 % \section{Component Datasheets and Specifications}
 % \section{Notebook Extracts}
 
+\newpage
 \begingroup
 \renewcommand{\bibfont}{\footnotesize}
 \begin{multicols}{2}
@@ -95,6 +97,7 @@ There is huge variation in the pressure profile, and the software plans to offer
 \end{multicols}
 \endgroup
 
+\newpage
 \appendix
 \section{Appendix}
 \subsection{Estimating force at the syringe plunger}
