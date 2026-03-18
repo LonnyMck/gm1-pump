@@ -1,10 +1,12 @@
-\documentclass[11pt, a4paper]{article}
+\documentclass[10pt, a4paper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{cmbright}
 \usepackage[OT1]{fontenc}
 \usepackage{authblk}
 \usepackage{siunitx}
-
+\usepackage{biblatex}
+\usepackage{multicol}
+\addbibresource{gm1_short_team_report.bib}
 \title{
     Short Team Report\\
     \Large Team 2: Low Cost Perfusion Pump\\
@@ -35,7 +37,8 @@
 Haemodialysis is the process of removing blood from the body, passing it through a dialyser which filters it, and then returning it to the body, and is indicated in cases of kidney failure.
 The department is looking to penetrate the artifical vessel graft market by targeting an application that doesn't pose immediate threat to life upon failure (in contrast to grafts for bypass surgery, e.g. coronary bypass), involves use on much shorter timescales, and features simpler medical device regulation.
 In order to support the high flow rates required for haemodialysis ($>\SI{300}{\milli\liter\per\minute}$), arteriovenous (AV) fistulas are commonly surgically formed.
-Artifical vessels allow for the formation of AV fistulas in the elderly population, for whom forming natural AV fistulas is challenging, due to vessel damage from natural and iatrogenic causes (e.g., repeated blood samples over many years), as well as slow time to maturation.
+In the elderly population, the formation of AV fistulas can be more challenging due to vessel damage from natural and iatrogenic causes (e.g., repeated blood samples over many years), as well as slow time to maturation \cite{mcgroganArteriovenousFistulaOutcomes2015}.
+Synthetic vessel grafts help form a AV fistula with a shorter maturation period, or for patients with exhausted vascular access sites \cite{akohProstheticArteriovenousGrafts2009}.
 In the case of artificial vessels for uses in bypass grafts, they offer greater availability over the current sources of donor vessels from the great veins of the leg, which may be damaged and require modification in order for arterial applications.
 
 % \section{Existing Laboratory Setup and Limitations}
@@ -51,11 +54,14 @@ In the case of artificial vessels for uses in bypass grafts, they offer greater 
 % \subsubsection{Waveform Generation}
 % \subsection{Electrical Subsystem}
 % \subsection{Pressure Sensing}
-% \subsection{Software}
-% \subsubsection{Architecture}
-% \subsubsection{Pressure Profile Modelling}
-% \subsubsection{Profile Configuration}
-% \subsubsection{Monitoring and Export}
+\section{Software}
+
+Through the software, laboratory personnel will be able to choose a pressure profile configuration and schedule of operation, view real-time pressure plots including the error for monitoring, and be able to log/export pressure data. For the lab environment, this would involve both a graphical user interface (GUI) for real-time visualisations and user-friendly changing of preferences and a command-line interface (CLI) for more advanced scripting for reproducible experiments and sharing of configurations, essential for peer-reviewed research. The software should be cross-platform, and support standard file formats for data export (e.g., comma-separated values, CSV). The software should be able to program schedules, such as a ramping mode of operation that slowly increases the pressure to find the bursting point. The software should also flag warnings for error states, such as sudden drops in pressure from a leak (e.g. vessel bursting) or sudden increases in pressure from a blockage (e.g., blockage from a clotting process). Cumulative error, percentage uptime at target pressure should also be monitored for evaluation. Storage demands involve \SI{2.34}{\kilo\byte\per\second} (3 \SI{64}{\bit} floats at \SI{100}{Hz}), with data transmitted over USB.
+
+\subsection{Modelling the pressure profile}
+
+There is huge variation in the pressure profile, and the software plans to offer multiple perspectives by which to model the cardiovascular system. Basic controls involve setting target systolic pressures, diastolic pressures, and heart rate. In addition, we can offer easier set up of experiment sets by incorporating normative data that adjusts these physiological variables for age \cite{linIdentificationNormalBlood2016}, sex \cite{joynerSexDifferencesBlood2016}, level of exercise \cite{sharmanExerciseBloodPressure2015}, temperature, and the type of vessel (i.e., distance from the heart, such as artery, capillary, or venule). The chosen configuration and parameters can be exported, stored, or shared as JavaScript Object Notation (JSON) files for repeatability. The mathematical modelling of pressure profiles consists of splitting the target signal into two components: a constant mean DC pressure component, and an AC component. The DC component we model using the Windkessel model \cite{westerhofArterialWindkessel2009} and literature values for the Womersley number for different vessel types, sensitive to the aging process \cite{loudonUseDimensionlessWomersley1998}. The AC component we emulate by conducting Fourier analysis on literature representations of the cardiac cycle, to capture nuances such as the dicrotic notch.
+
 % \subsection{Control System}
 % \subsubsection{Objectives and Constraints}
 % \subsubsection{PID Controller Design}
@@ -80,4 +86,12 @@ In the case of artificial vessels for uses in bypass grafts, they offer greater 
 % \section{Detailed Calculations}
 % \section{Component Datasheets and Specifications}
 % \section{Notebook Extracts}
+
+\begingroup
+\renewcommand{\bibfont}{\footnotesize}
+\begin{multicols}{2}
+    \printbibliography
+\end{multicols}
+\endgroup
+
 \end{document}
