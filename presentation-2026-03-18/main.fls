@@ -484,6 +484,9 @@ INPUT ./images/valves.jpg
 INPUT ./images/lucy_pressure_profile.jpeg
 INPUT ./images/lucy_pressure_profile.jpeg
 INPUT ./images/lucy_pressure_profile.jpeg
+INPUT ./images/pressure_distance.jpg
+INPUT ./images/pressure_distance.jpg
+INPUT ./images/pressure_distance.jpg
 INPUT ./images/pressure-profile.jpg
 INPUT ./images/pressure-profile.jpg
 INPUT ./images/pressure-profile.jpg

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.5)  18 MAR 2026 12:41
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.5)  18 MAR 2026 13:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1138,43 +1138,43 @@ File: images/circuit.jpg Graphic file (type bmp)
 [11
 
 ]
-
-[12
-
-]
-Underfull \hbox (badness 2818) in paragraph at lines 333--333
+Underfull \hbox (badness 2818) in paragraph at lines 320--320
 []|\TU/lmss/m/n/10 Eliminates $[][][]$$[]$ atmo-
  []
 
 
-Underfull \hbox (badness 1629) in paragraph at lines 333--333
+Underfull \hbox (badness 1629) in paragraph at lines 320--320
 []|\TU/lmss/m/n/10 Nyquist for estimated $[][]$$[]$
  []
 
 
-Overfull \hbox (8.96837pt too wide) in paragraph at lines 333--333
+Overfull \hbox (8.96837pt too wide) in paragraph at lines 320--320
  [][] 
  []
 
 
 
-[13
+[12
 
 ]
 File: images/valves.jpg Graphic file (type bmp)
 <images/valves.jpg>
 
 
-[14
+[13
 
 ]
 
-[15
+[14
 
 ]
 File: images/lucy_pressure_profile.jpeg Graphic file (type bmp)
 <images/lucy_pressure_profile.jpeg>
 
+
+[15
+
+]
 
 [16
 
@@ -1183,6 +1183,9 @@ File: images/lucy_pressure_profile.jpeg Graphic file (type bmp)
 [17
 
 ]
+File: images/pressure_distance.jpg Graphic file (type bmp)
+<images/pressure_distance.jpg>
+
 
 [18
 
@@ -1273,12 +1276,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 53911 strings out of 473832
- 1305128 string characters out of 5729481
+ 53920 strings out of 473832
+ 1305421 string characters out of 5729481
  2310956 words of memory out of 5000000
- 76317 multiletter control sequences out of 15000+600000
+ 76325 multiletter control sequences out of 15000+600000
  569736 words of font info for 100 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,14n,123p,2160b,4990s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (30 pages, 361856 bytes).
+Output written on main.xdv (30 pages, 358388 bytes).

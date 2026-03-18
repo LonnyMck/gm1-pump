@@ -208,7 +208,7 @@
         \textbf{item}               & \textbf{qty.} & \textbf{unit cost (£)} \\
         \hline
         microcontroller             & 1             & 20                     \\
-        power board                 & 1             & 20                     \\
+        motor controller board      & 1             & 20                     \\
         lead screw \& stepper motor & 2             & 15                     \\
         pressure sensors            & 2             & 10                     \\
         one-way valves              & 4             & 2                      \\
@@ -257,7 +257,7 @@
         \textbf{item}               & \textbf{qty.} & \textbf{unit cost (£)} \\
         \hline
         microcontroller             & 1             & 5--20                  \\
-        power board                 & 1             & 10--20                 \\
+        motor controller board      & 1             & 10--20                 \\
         lead screw \& stepper motor & 2             & 15                     \\
         pressure sensors            & 2             & 3--10                  \\
         valves                      & 2--6          & 2                      \\
@@ -288,7 +288,7 @@
     \begin{itemize}
         \item Design housing for motors, syringes, and reservoir
         \item Design and assemble connections for pressure sensors
-        \item Design and assemble valve junctions valve junctions
+        \item Design and assemble valve junctions
         \item Data collection for control system parameter tuning
         \item Ensure final product is easy to 3D print and assemble, and that multiple pumps can be made and run at once
     \end{itemize}
@@ -301,19 +301,6 @@
     \textbf{Lucy}
 }
 
-\frame{
-    \frametitle{Mechanical: pressure sensing function}
-
-    \begin{itemize}
-        \item Pressure is the primary output variable, the physiological signal being replicated
-        \item Closed-loop control drives the pump to track a target pressure waveform
-        \item Mean perfusion pressure must be maintained in a range, e.g. \SIrange{80}{120}{mmHg} at rest
-        \item The heart beats at ${\sim}\SI{1}{\hertz}$, but fast transients in the waveform must be faithfully tracked
-    \end{itemize}
-}
-\note{
-    \textbf{Lucy}
-}
 
 
 \frame{
@@ -332,7 +319,14 @@
     \end{tabular}
 }
 \note{
-    \textbf{Luca}
+    \textbf{India}
+
+    \begin{itemize}
+        \item Pressure is the primary output variable, the physiological signal being replicated
+        \item Closed-loop control drives the pump to track a target pressure waveform
+        \item Mean perfusion pressure must be maintained in a range, e.g. \SIrange{80}{120}{mmHg} at rest
+        \item The heart beats at ${\sim}\SI{1}{\hertz}$, but fast transients in the waveform must be faithfully tracked
+    \end{itemize}
 }
 
 \frame{
@@ -392,7 +386,7 @@
         \vspace{0pt}
         \begin{block}{More control}
             \begin{itemize}
-                \item Pinch valves added downstream of syringes
+                \item Pinch valves added downstream of test section
                 \item AC pressure component superimposed on DC syringe output
                 \item 2 pressure sensors required
             \end{itemize}
@@ -448,6 +442,12 @@
 }
 \note{
     \textbf{Tahmid}
+}
+
+\frame{
+    \frametitle{Variation of pressure profile with distance}
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/pressure_distance.jpg}
 }
 
 \frame{
