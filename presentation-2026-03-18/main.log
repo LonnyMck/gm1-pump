@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.5)  18 MAR 2026 12:18
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.5)  18 MAR 2026 12:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1098,83 +1098,83 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <12> not available
 [5
 
 ]
-File: images/design.jpg Graphic file (type bmp)
-<images/design.jpg>
-
 
 [6
 
 ]
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 237.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 237.
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 237.
+File: images/design.jpg Graphic file (type bmp)
+<images/design.jpg>
 
 
 [7
 
 ]
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 230.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 230.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 230.
+
 
 [8
+
+]
+
+[9
 
 ]
 File: images/gantt.jpg Graphic file (type bmp)
 <images/gantt.jpg>
 
 
-[9
+[10
 
 ]
 File: images/circuit.jpg Graphic file (type bmp)
 <images/circuit.jpg>
 
 
-[10
-
-]
-
 [11
 
 ]
-Underfull \hbox (badness 2818) in paragraph at lines 340--340
+
+[12
+
+]
+Underfull \hbox (badness 2818) in paragraph at lines 333--333
 []|\TU/lmss/m/n/10 Eliminates $[][][]$$[]$ atmo-
  []
 
 
-Underfull \hbox (badness 1629) in paragraph at lines 340--340
+Underfull \hbox (badness 1629) in paragraph at lines 333--333
 []|\TU/lmss/m/n/10 Nyquist for estimated $[][]$$[]$
  []
 
 
-Overfull \hbox (8.96837pt too wide) in paragraph at lines 340--340
+Overfull \hbox (8.96837pt too wide) in paragraph at lines 333--333
  [][] 
  []
 
 
 
-[12
+[13
 
 ]
 File: images/valves.jpg Graphic file (type bmp)
 <images/valves.jpg>
 
 
-[13
+[14
 
 ]
 
-[14
+[15
 
 ]
 File: images/lucy_pressure_profile.jpeg Graphic file (type bmp)
 <images/lucy_pressure_profile.jpeg>
 
-
-[15
-
-]
 
 [16
 
@@ -1199,13 +1199,13 @@ File: images/lucy_pressure_profile.jpeg Graphic file (type bmp)
 [21
 
 ]
+File: images/pressure-profile.jpg Graphic file (type bmp)
+<images/pressure-profile.jpg>
+
 
 [22
 
 ]
-File: images/control.jpg Graphic file (type bmp)
-<images/control.jpg>
-
 
 [23
 
@@ -1214,6 +1214,9 @@ File: images/control.jpg Graphic file (type bmp)
 [24
 
 ]
+File: images/control.jpg Graphic file (type bmp)
+<images/control.jpg>
+
 
 [25
 
@@ -1223,19 +1226,30 @@ File: images/control.jpg Graphic file (type bmp)
 
 ]
 
-LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 689.
-
-
-
 [27
 
 ]
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 696.
+File: images/gravity.jpeg Graphic file (type bmp)
+<images/gravity.jpeg>
 
 
 [28
+
+]
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 698.
+
+
+
+[29
+
+]
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 705.
+
+
+[30
 
 ]
 \tf@nav=\write7
@@ -1259,12 +1273,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 53887 strings out of 473832
- 1304547 string characters out of 5729481
- 2310844 words of memory out of 5000000
- 76295 multiletter control sequences out of 15000+600000
+ 53911 strings out of 473832
+ 1305128 string characters out of 5729481
+ 2310956 words of memory out of 5000000
+ 76317 multiletter control sequences out of 15000+600000
  569736 words of font info for 100 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,14n,123p,2160b,4990s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (28 pages, 344948 bytes).
+Output written on main.xdv (30 pages, 361856 bytes).

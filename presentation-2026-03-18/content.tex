@@ -182,28 +182,21 @@
 \frame{
     \frametitle{Initial design: syringe pump}
 
-    \begin{columns}[T,onlytextwidth]
-
-        \column{0.5\textwidth}
-        \vspace{0pt}
-        \begin{itemize}
-            \item 2 syringes for continuous flow
-            \item Valves prevent backflow
-            \item Pinch valves/motor variation to create non-standard waveform
-            \item Pressure sensors for a feedback loop
-        \end{itemize}
-
-        \column{0.5\textwidth}
-        \vspace{0pt}
-        \includegraphics[width=\linewidth,keepaspectratio]{images/design.jpg}
-
-    \end{columns}
+    \begin{itemize}
+        \item 2 syringes for continuous flow
+        \item Valves prevent backflow
+        \item Pinch valves/motor variation to create non-standard waveform
+        \item Pressure sensors for a feedback loop
+    \end{itemize}
 }
 \note{\textbf{Lucy}}
 
-
-
-
+\frame{
+    \frametitle{Initial design: syringe pump}
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/design.jpg}
+}
+\note{\textbf{Lucy}}
 
 \frame{
     \frametitle{Project resources}
@@ -517,6 +510,14 @@
 }
 
 \frame{
+    \frametitle{Pressure profile}
+    \includegraphics[width=\textwidth]{images/pressure-profile.jpg}
+}
+\note{
+    \textbf{Tahmid}
+}
+
+\frame{
     \frametitle{Control: objectives}
 
     \begin{block}{Goal}
@@ -674,11 +675,19 @@
 \frame{
     \frametitle{Fallback: if syringe system doesn't work as planned}
 
-    \begin{block}{Gravity-powered flow}
-    \end{block}
+    \begin{columns}
+        \begin{column}{0.6\textwidth}
+            \begin{block}{Gravity-powered flow}
+            \end{block}
 
-    \begin{block}{Diaphragm for pressure pulses}
-    \end{block}
+            \begin{block}{Diaphragm for pressure pulses}
+            \end{block}
+        \end{column}
+
+        \begin{column}{0.4\textwidth}
+            \includegraphics[width=\textwidth]{images/gravity.jpeg}
+        \end{column}
+    \end{columns}
 }
 \note{Lonnie}
 

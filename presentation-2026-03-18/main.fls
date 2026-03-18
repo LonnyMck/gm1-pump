@@ -484,9 +484,15 @@ INPUT ./images/valves.jpg
 INPUT ./images/lucy_pressure_profile.jpeg
 INPUT ./images/lucy_pressure_profile.jpeg
 INPUT ./images/lucy_pressure_profile.jpeg
+INPUT ./images/pressure-profile.jpg
+INPUT ./images/pressure-profile.jpg
+INPUT ./images/pressure-profile.jpg
 INPUT ./images/control.jpg
 INPUT ./images/control.jpg
 INPUT ./images/control.jpg
+INPUT ./images/gravity.jpeg
+INPUT ./images/gravity.jpeg
+INPUT ./images/gravity.jpeg
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmss9.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm

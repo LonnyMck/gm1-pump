@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber main"] 1773831470.58133 "main.bcf" "main.bbl" "main" 1773836334.80369 0
+["biber main"] 1773831470.58133 "main.bcf" "main.bbl" "main" 1773837693.48058 0
   "GM1.bib" 1773683239.37981 2611 8901687fbdce81f7d73d73c25354981e ""
-  "main.bcf" 1773836334.42958 108580 29045c4da054a88e4fa7c021ba7b4a78 "xelatex"
+  "main.bcf" 1773837693.14772 108580 29045c4da054a88e4fa7c021ba7b4a78 "xelatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1773836334.48095 "main.xdv" "main.pdf" "main" 1773836334.80552 0
-  "main.xdv" 1773836334.43027 344948 baed444eb140d700c4240fd316811bbd "xelatex"
+["xdvipdfmx"] 1773837693.20065 "main.xdv" "main.pdf" "main" 1773837693.48259 0
+  "main.xdv" 1773837693.14845 361856 7b282bae46ae0f0f8a386d07ba9f3aa7 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1773836332.86571 "/Users/tahmidazam/Documents/iia/gm1/gm1-pump/presentation-2026-03-18/main.tex" "main.xdv" "main" 1773836334.80375 0
+["xelatex"] 1773837691.55221 "/Users/tahmidazam/Documents/iia/gm1/gm1-pump/presentation-2026-03-18/main.tex" "main.xdv" "main" 1773837693.48064 0
   "/Users/tahmidazam/Documents/iia/gm1/gm1-pump/presentation-2026-03-18/main.tex" 1773831568.41337 539 0f67339950a00f84ab5b31dbc6270c34 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -253,19 +253,21 @@
   "/usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf" 1739380943 42148 61becc7c670cd061bb319c643c27fdd4 ""
   "/usr/local/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1759654375 5639807 f2490e5eb96f51bf9dbee85bc07eb6bd ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "content.tex" 1773836330.97284 25132 bb116cfb90509d909e75a63835aa8c7a ""
+  "content.tex" 1773837691.27309 25417 aa49bfc3f5e9d21ae6e892808ce4394b ""
   "images/av_fistula_graft.jpg" 1773689414.53556 30550 0a973356a938f7150583e20c9a9fc2f5 ""
   "images/circuit.jpg" 1773684157.30984 42175 e319901cea048e61fe858054898e006c ""
   "images/control.jpg" 1773684157.30052 85820 3c64868d6bd480817c43b96f9b9540a0 ""
-  "images/design.jpg" 1773684514.65112 187565 e8f1dd02c8cfbe35a742267e885e4ba6 ""
+  "images/design.jpg" 1773837307.45682 181583 d190d8e22f5755ba58f952b3a80b399a ""
   "images/gantt.jpg" 1773684157.30309 244161 2db83455e9869e3ac0ae7c40a7774428 ""
+  "images/gravity.jpeg" 1773837107.54938 120990 3336212563be17bb7d118e99b47d0ee6 ""
   "images/lucy_pressure_profile.jpeg" 1773836141.50905 71174 fcc1bce42394c66e80e15055034ea779 ""
+  "images/pressure-profile.jpg" 1773684163.96974 77020 6debc99326f717db3ea03d2942b6dfec ""
   "images/valves.jpg" 1773684157.3253 179902 0787f569f0d9a2cd2732397d2f3f55ef ""
-  "main.aux" 1773836334.42826 5457 daaf17abaa64eb37cde3c48f631bea3c "xelatex"
+  "main.aux" 1773837693.14611 5799 337c3d199204e7e67bd0c27e783c5ce1 "xelatex"
   "main.bbl" 1773831471.85463 4558 443190a633d8bd56c3e93a7b5c25e98f "biber main"
-  "main.nav" 1773836334.43023 2783 f8b0d1eaf383f71e4268670ac899f7e1 "xelatex"
-  "main.out" 1773836333.87516 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "main.run.xml" 1773836334.43018 2333 9cf674f6b3632d474d7d4cc6d6327523 "xelatex"
+  "main.nav" 1773837693.14841 2969 5734b160ef74b140b37e35c19980d54f "xelatex"
+  "main.out" 1773837692.56942 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "main.run.xml" 1773837693.14834 2333 9cf674f6b3632d474d7d4cc6d6327523 "xelatex"
   "main.tex" 1773831568.41337 539 0f67339950a00f84ab5b31dbc6270c34 ""
   (generated)
   "main.aux"
