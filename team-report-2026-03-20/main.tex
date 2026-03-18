@@ -4,7 +4,7 @@
 \usepackage[OT1]{fontenc}
 \usepackage{authblk}
 \usepackage{siunitx}
-\usepackage{biblatex}
+\usepackage[backend=biber, style=numeric]{biblatex}
 \usepackage{multicol}
 \usepackage{amsmath}
 \addbibresource{gm1_short_team_report.bib}
@@ -38,8 +38,8 @@
 Haemodialysis is the process of removing blood from the body, passing it through a dialyser which filters it, and then returning it to the body, and is indicated in cases of kidney failure.
 The department is looking to penetrate the artifical vessel graft market by targeting an application that doesn't pose immediate threat to life upon failure (in contrast to grafts for bypass surgery, e.g. coronary bypass), involves use on much shorter timescales, and features simpler medical device regulation.
 In order to support the high flow rates required for haemodialysis ($>\SI{300}{\milli\liter\per\minute}$), arteriovenous (AV) fistulas are commonly surgically formed.
-In the elderly population, the formation of AV fistulas can be more challenging due to vessel damage from natural and iatrogenic causes (e.g., repeated blood samples over many years), as well as slow time to maturation \cite{mcgroganArteriovenousFistulaOutcomes2015}.
-Synthetic vessel grafts help form a AV fistula with a shorter maturation period, or for patients with exhausted vascular access sites \cite{akohProstheticArteriovenousGrafts2009}.
+In the elderly population, the formation of AV fistulas can be more challenging due to vessel damage from natural and iatrogenic causes (e.g., repeated blood samples over many years), as well as slow time to maturation \supercite{mcgroganArteriovenousFistulaOutcomes2015}.
+Synthetic vessel grafts help form a AV fistula with a shorter maturation period, or for patients with exhausted vascular access sites \supercite{akohProstheticArteriovenousGrafts2009}.
 In the case of artificial vessels for uses in bypass grafts, they offer greater availability over the current sources of donor vessels from the great veins of the leg, which may be damaged and require modification in order for arterial applications.
 
 % \section{Existing Laboratory Setup and Limitations}
@@ -61,7 +61,7 @@ Through the software, laboratory personnel will be able to choose a pressure pro
 
 \subsection{Modelling the pressure profile}
 
-There is huge variation in the pressure profile, and the software plans to offer multiple perspectives by which to model the cardiovascular system. Basic controls involve setting target systolic pressures, diastolic pressures, and heart rate. In addition, we can offer easier set up of experiment sets by incorporating normative data that adjusts these physiological variables for age \cite{linIdentificationNormalBlood2016}, sex \cite{joynerSexDifferencesBlood2016}, level of exercise \cite{sharmanExerciseBloodPressure2015}, temperature, and the type of vessel (i.e., distance from the heart, such as artery, capillary, or venule). The chosen configuration and parameters can be exported, stored, or shared as JavaScript Object Notation (JSON) files for repeatability. The mathematical modelling of pressure profiles consists of splitting the target signal into two components: a constant mean DC pressure component, and an AC component. The DC component we model using the Windkessel model \cite{westerhofArterialWindkessel2009} and literature values for the Womersley number for different vessel types, sensitive to the aging process \cite{loudonUseDimensionlessWomersley1998}. The AC component we emulate by conducting Fourier analysis on literature representations of the cardiac cycle, to capture nuances such as the dicrotic notch.
+There is huge variation in the pressure profile, and the software plans to offer multiple perspectives by which to model the cardiovascular system. Basic controls involve setting target systolic pressures, diastolic pressures, and heart rate. In addition, we can offer easier set up of experiment sets by incorporating normative data that adjusts these physiological variables for age \supercite{linIdentificationNormalBlood2016}, sex \supercite{joynerSexDifferencesBlood2016}, level of exercise \supercite{sharmanExerciseBloodPressure2015}, temperature, and the type of vessel (i.e., distance from the heart, such as artery, capillary, or venule). The chosen configuration and parameters can be exported, stored, or shared as JavaScript Object Notation (JSON) files for repeatability. The mathematical modelling of pressure profiles consists of splitting the target signal into two components: a constant mean DC pressure component, and an AC component. The DC component we model using the Windkessel model \supercite{westerhofArterialWindkessel2009} and literature values for the Womersley number for different vessel types, sensitive to the aging process \supercite{loudonUseDimensionlessWomersley1998}. The AC component we emulate by conducting Fourier analysis on literature representations of the cardiac cycle, to capture nuances such as the dicrotic notch.
 
 % \subsection{Control System}
 % \subsubsection{Objectives and Constraints}
