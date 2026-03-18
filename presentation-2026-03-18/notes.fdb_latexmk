@@ -1,18 +1,16 @@
 # Fdb version 4
-["biber main"] 1773831470.58133 "main.bcf" "main.bbl" "main" 1773833064.00398 0
-  "GM1.bib" 1773683239.37981 2611 8901687fbdce81f7d73d73c25354981e ""
-  "main.bcf" 1773833063.61649 108580 29045c4da054a88e4fa7c021ba7b4a78 "xelatex"
+["bibtex notes"] 1773833028.34074 "notes.aux" "notes.bbl" "notes" 1773833064.42138 2
+  "notes.aux" 1773833028.33859 32 3985256e7290058c681f74d7a3565a19 "xelatex"
   (generated)
-  "main.bbl"
-  "main.blg"
+  "notes.bbl"
+  "notes.blg"
   (rewritten before read)
-["xdvipdfmx"] 1773833063.67577 "main.xdv" "main.pdf" "main" 1773833064.00609 0
-  "main.xdv" 1773833063.61732 344840 317b5f3982b34e1d4960b04039939787 "xelatex"
+["xdvipdfmx"] 1773833064.1461 "notes.xdv" "notes.pdf" "notes" 1773833064.42328 0
+  "notes.xdv" 1773833064.07179 225832 8f4cd3c547f2ecea9cce54e8c8707acd "xelatex"
   (generated)
-  "main.pdf"
+  "notes.pdf"
   (rewritten before read)
-["xelatex"] 1773833061.99282 "/Users/tahmidazam/Documents/iia/gm1/gm1-pump/presentation-2026-03-18/main.tex" "main.xdv" "main" 1773833064.00405 0
-  "/Users/tahmidazam/Documents/iia/gm1/gm1-pump/presentation-2026-03-18/main.tex" 1773831568.41337 539 0f67339950a00f84ab5b31dbc6270c34 ""
+["xelatex"] 1773833062.60537 "notes.tex" "notes.xdv" "notes" 1773833064.42143 0
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -195,6 +193,7 @@
   "/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx" 1678141846 4629 cda468e8a0b1cfa0f61872e171037a4b ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx" 1711143581 40021 daa5a82ed0967f3ac4b77cb8384cac55 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/circuitikz/circuitikz.sty" 1736550187 13737 28b879275e5964b84f520a68715187ff ""
+  "/usr/local/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty" 1738874546 52272 63d293bc0d496619edb57585740861a2 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1739306980 46850 d87daedc2abdc653769a6f1067849fe0 ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
@@ -260,20 +259,14 @@
   "images/design.jpg" 1773684514.65112 187565 e8f1dd02c8cfbe35a742267e885e4ba6 ""
   "images/gantt.jpg" 1773684157.30309 244161 2db83455e9869e3ac0ae7c40a7774428 ""
   "images/valves.jpg" 1773684157.3253 179902 0787f569f0d9a2cd2732397d2f3f55ef ""
-  "main.aux" 1773833063.6149 5457 daaf17abaa64eb37cde3c48f631bea3c "xelatex"
-  "main.bbl" 1773831471.85463 4558 443190a633d8bd56c3e93a7b5c25e98f "biber main"
-  "main.nav" 1773833063.61728 2783 f8b0d1eaf383f71e4268670ac899f7e1 "xelatex"
-  "main.out" 1773833063.02049 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "main.run.xml" 1773833063.61721 2333 9cf674f6b3632d474d7d4cc6d6327523 "xelatex"
-  "main.tex" 1773831568.41337 539 0f67339950a00f84ab5b31dbc6270c34 ""
+  "notes.aux" 1773833028.33859 32 3985256e7290058c681f74d7a3565a19 "xelatex"
+  "notes.bbl" 1773833028.42585 0 d41d8cd98f00b204e9800998ecf8427e "bibtex notes"
+  "notes.nav" 1773831600.89936 2783 f8b0d1eaf383f71e4268670ac899f7e1 ""
+  "notes.run.xml" 1773833064.07169 2340 eb53da5c509a65062580a9db3e9046ba "xelatex"
+  "notes.tex" 1773832925.35663 594 8b24a3bee6e1c0433efeacf874dd271c ""
   (generated)
-  "main.aux"
-  "main.bcf"
-  "main.log"
-  "main.nav"
-  "main.out"
-  "main.run.xml"
-  "main.snm"
-  "main.toc"
-  "main.xdv"
+  "notes.aux"
+  "notes.log"
+  "notes.run.xml"
+  "notes.xdv"
   (rewritten before read)
