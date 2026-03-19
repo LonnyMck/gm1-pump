@@ -9,6 +9,14 @@
 \usepackage{multicol}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{array}
+
+\usepackage[table,xcdraw]{xcolor}
+% Beamer presentation requires \usepackage{colortbl} instead of \usepackage[table,xcdraw]{xcolor}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+
 
 \addbibresource{gm1_short_team_report.bib}
 \title{
@@ -97,10 +105,82 @@ There is huge variation in the pressure profile, and the software plans to offer
 \section{Project Resources and Costing}
 
 \subsection{Prototype Bill of Materials}
+
+
+\begin{table}[h]
+\centering
+
+\begin{tabular}{|>{\raggedright\arraybackslash}p{0.3\linewidth}|>{\raggedright\arraybackslash}p{0.25\linewidth}|>{\raggedright\arraybackslash}p{0.1\linewidth}|>{\raggedright\arraybackslash}p{0.1\linewidth}|>{\raggedright\arraybackslash}p{0.25\linewidth}|}
+\hline
+\textbf{item} & \textbf{link} & \textbf{cost} & \textbf{amount} & \textbf{notes} \\
+\hline
+Microcontroller: ESP32 with bluetooth  & \href{https://www.amazon.co.uk/diymore-DevKitC-1-Expansion-Development-Bluetooth-ESP32-S3-Breakout-Board/dp/B0FX3T2HN7?crid=STF4P3YI8QXW&dib=eyJ2IjoiMSJ9._Zbm4gpd39xSJ7Q_7Mn3dEGuvGkO9gzVLhHQY1DnE-cVNEohObZ5CQsCP18jQqdW0RCfamMeTHE-JQ4MNcnOvdy3mgorr1rAJtzIW031BYd8HLN-6mmW8mWjv1qmQl_hHfEoNBbWli4FtnPwJ-SqNdHVW0C1XGtwwAqIo1CBgvKfQuJ7PrIqFK7ML5tPgOH4OgCyqv6ugx3c3jxnsLf8XrjkiT84fme-XFlET9LX__i87hRrQ8rykg0i7xhFSwUBw3UnH6Z9Qgm3ecFhdbXRhkNrBaqDDW3yNkgh0pFhVcc.LT0l7bBZzSXTKG57hJrPUznfVUlzUvwu_zL4J9xFEEE&dib_tag=se&keywords=esp32\%2Bdev\%2Bkit&qid=1773854204&refinements=p_36\%3A1500-2500&rnid=389035011&s=electronics&sprefix=esp32\%2B\%2Celectronics\%2C322&sr=1-8&th=1}{microcontroller link} & 16.58 & 1 &\\
+\hline
+Stepper motors & \href{https://www.stepperonline.co.uk/3pcs-e-series-nema-17-bipolar-1-8deg-17ncm-24-07oz-in-1a-42x42x23mm-4-wires-3-17he08-1004s.html}{stepper motor link} & 9.67 & 4 &  \\
+\hline
+Stepper motor driver: preferably TMC2209 & \href{https://www.amazon.co.uk/DIGISHUO-TMC2209-Stepsticks-Heatsink-Motherboard/dp/B0F93K9PKS?dib=eyJ2IjoiMSJ9.UqCFuTFjoHk4qCa-EKwcXqSzFDikCvj5ThZ4RrYNm945Zi-dFiHtFAk4z-TdDcGTRXApW_krzu6uvGhWkF1mXCwjypKFZkQ-GsS7FGhsTnizGg2w-Gb-FFjtSn0V-repcaLDetOxWTaXo3W35R4StX_a8m5SxhHNaSI2VwgOe9gxkhcTe-lz4UWQKM_Kemr7XUgpbDLU3e3Y90g-n9o0fVBFcwxycTxYSOaFnszZjsCXo4HQ7CQLyE54qDpNie25M4t-gXS4hspmKV125hUT_n0XpgL18gsrROJunp0GlII.uR7M0L3RBSn4nHz6sYAtY2AsVhkGbU5yPd0SkPtFtq0&dib_tag=se&keywords=tmc2209&qid=1773934827&sr=8-9}{TMC2209 link}  & 17.99 & 1 (6 bought together) &  \\
+\hline
+Alphanumeric display & \href{https://www.digikey.co.uk/en/products/detail/kingbright/BA56-12SURKWA/4098538}{alphanumeric display} & 3.70 & 2 &  \\
+\hline
+Pinch valve & \href{https://www.amazon.co.uk/TAILONZ-PNEUMATIC-Connect-Controller-Straight/dp/B0DPKJ96NF?crid=1QTWBXXQAKBBB&dib=eyJ2IjoiMSJ9.R7sVE2QtZCgSpscgoV1Olzi7JZ_sra8mDn4aBpKyQVa5JPgqxehYa2DLJ0vvfOmLpiIoM_jk09fd3mynzaYkG_gj1_v6LLQb5EDCWrOJmAE_D-zovs0HMiwDGIzU9S6G9cbLun6cRradCjPsXKCjDgDFYPpj1L7noe2Rr0-J1v7RKTabNTKkNs4x-v3byWig8pOHzTLGr0X3z9d4ljNfRcUeGSKIySVpA3X9V4qQ2RPj2rCFQwcjVYgRdIdlB0o2YmP5GgDXACgCALcWCTOFMLpsHa05iiAdikOeF9F4Z-s.Kqjpk2Nv8LVzMF_Nkeyn70ljDDCgIppWW9h-ebOxrX0&dib_tag=se&keywords=pinch+valve+6mm&qid=1773856412&sprefix=pinch+valve+6m\%2Caps\%2C475&sr=8-30}{pinch valve link}  & 9.99 & 1 (5 bought together)  & 6mm tubing \\
+\hline
+3/2 valve & \href{https://www.amazon.co.uk/TA-VIGOR-Shut-Off-Fittings-Non-Slip-Handle-3/dp/B0FPFTQHFG?crid=2I0JV2U6BJ0EY&dib=eyJ2IjoiMSJ9.Y_PWATsTcx4iewmF2Cjtru_Whjnbm5RRU_M_CAZuYzlooLUa_utfFC8PoS3SxMtl25I1_VUhoGwaqmHRsEDrnE4z6BL05g4GxKbrD1NWxxAMa9kZ8eQJuEkAVn5flkpjHZHraur1Ty9XiBp-GVMqGwBjtibV7S98kEZUXej-FIJ0YO8mow4vJfbQmNoAg380Lv22YqkwnEq_z3dgfQ27EXcRHw8tUBB5s80PamTGBVHk1lbYrAmvr0DnL-BsrxrT4X1ol7tlh66B7lucm3RajJtR3TtYWgVrQPwSpStmL1A.j7LUSTgccsshWSEFl98wBIVqsO1d7Y3rO2XbHmHBXsU&dib_tag=se&keywords=3-way\%2Bmanual\%2Bball\%2Bvalve\%2B6mm&qid=1773935313&sprefix=3-way\%2Bmanual\%2Bball\%2Bvalve\%2B6mm\%2Caps\%2C329&sr=8-44&th=1}{3/2 ball valve} & 7.99 & 1 (3 bought together) & 6mm tubing \\
+\hline
+One-way valve & \href{https://uk.rs-online.com/web/p/pneumatic-non-return-valves/9160943?gb=a}{one-way valve} & 7.04 & 4 & 6mm tubing \\
+\hline
+Syringes - as many sizes between 60ml and 100ml as possible & \href{https://ukmedi.co.uk/products/60ml-enfit-reusable-medicina-syringe-medicina-lhe60-ukmedi-co-uk}{syringe link} and \href{https://ukmedi.co.uk/products/100ml-enteral-isosaf-home2-standard-enfit-tip-syringes?_pos=2&_fid=e63b27caf&_ss=c}{alternative} & 25.99 & 5 (cheaper as set of 5) &  \\
+\hline
+Syringe for initial testing & \href{https://www.amazon.co.uk/LargeCapacity-PlasticSyringe-Measuring-Syringefor-irrigation/dp/B0F8NPMMF2}{syringe for testing}  & 5.59 & 2 &  \\
+\hline
+Tubing: 4-5 mm inner, 1 mm thickness & \href{https://www.polymax.co.uk/silicone/silicone-tubing}{silicone tubing}  & 15.75 & 5 meters (minimum order) & 1mm thickness, 5mm diameter \\
+\hline
+ &  &  &  &  \\
+\hline
+
+\end{tabular}
+
+\end{table}
+
+Total: £179.71
+
+The breakout board with the microcontroller will already include an LED and switches, as well as being pre-soldered, for quick testing. It will also have bluetooth and different peripherals, like I2C protocols available.
+
 \subsection{Final Product Cost Estimate}
+
+The final product cost is hard to determine as different configurations may be used. The current estimate is between 50 - 100 pounds, broken down in the table below.
+
+\begin{tabular}{lll}
+        \hline
+        \textbf{item}               & \textbf{qty.} & \textbf{unit cost (£)} \\
+        \hline
+        microcontroller             & 1             & 5--20                  \\
+        motor controller board      & 1             & 10--20                 \\
+        lead screw \& stepper motor & 2             & 15                     \\
+        pressure sensors            & 2             & 3--10                  \\
+        valves                      & 2--6          & 2                      \\
+        syringes                    & 2             & 1                      \\
+        tubing                      & ---           & ---                    \\
+        \hline
+        \textbf{total}              &               & \textbf{50--100}       \\
+    \end{tabular}
+
 \subsection{Resource Requests}
 
+Within the department, we require:
+
+\begin{itemize}
+    \item 3D printing materials
+    \item Tubing, if available
+    \item Pressure sensors (as discussed with Dr. Peter Long), including T-type connectors
+    \item Lead screw materials
+    \item Breadboard, including pins
+    \item Soldering equipment and material
+    \item Perfboard (later in timeline)
+\end{itemize}
+
+
 \section{Plan and Timescales}
+
 \subsubsection{Week 3, first half (May 14 - 18):}
 
 Initial familiarisation with different equipment/software. Control/Software will put together a list of setups with valves and placements of valves to test their efficacy. Mechanical will build basic prototype. Electrical will set up components so data can be tested. Data for DC pressure will be first taken, then easy waveforms will be tested, like a sine wave or triangle wave.
@@ -119,7 +199,7 @@ Interim reports will be submitted.
 
 \subsubsection{Week 4, second half (May 25-27):}
 
-Design will be refined, and final casing will be tested and put together. poster and presentation will start being drafted
+Design will be refined, and final casing will be tested and put together. Poster and presentation will start being drafted.
 
 \subsubsection{Week 5 (May 28 - June 5):}
 Poster and presentation will be finished and presented.
@@ -133,7 +213,7 @@ Poster and presentation will be finished and presented.
 % \subsection{Cross-Team Collaboration}
 
 \section{Critical Steps and Mitigating Problems}
-Several tasks are critical to the success of the project.
+Several tasks are critical to the success of the project. These are described below, as well as the steps we will take to mitigate any potential issues.
 
 \subsubsection{Accuracy/consistency of readings}
 Sensors and motors must be able to be observed and controlled accurately. We are using stepper motors, which do not have a high level of control like servos. Closed-feedback loops will likely be used to solve this issue. If sensors are not accurate, more expensive devices may need to be used, which will drive up the cost of the final product.
@@ -152,7 +232,11 @@ The microcontroller should be able to be controlled by a GUI or CLI for ease of 
 This project handles water and electrical components near eachother. Care should be taken to avoid any damage to the electronics, or damage to the person.
 
 
-% \section{Use of AI}
+\section{Use of AI}
+
+Lonnie: 
+AI was used for the initial cost estimate and finding certain items online, like valves. All final prices listed are taken from website links.
+
 % \appendix
 % \section{Detailed Calculations}
 % \section{Component Datasheets and Specifications}
