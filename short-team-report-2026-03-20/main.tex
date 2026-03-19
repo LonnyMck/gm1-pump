@@ -8,6 +8,8 @@
 \usepackage[backend=biber, style=numeric]{biblatex}
 \usepackage{multicol}
 \usepackage{amsmath}
+\usepackage{graphicx}
+
 \addbibresource{gm1_short_team_report.bib}
 \title{
     Short Team Report\\[0.5em] 
@@ -52,7 +54,33 @@ In the case of artificial vessels for uses in bypass grafts, they offer greater 
 % \subsubsection{Valves}
 % \subsubsection{Motors and Drive}
 % \subsubsection{Waveform Generation}
-% \subsection{Electrical Subsystem}
+\subsection{Electrical Subsystem}
+
+ 
+The electrical system will be connected as follows:
+
+\includegraphics[width=0.7\textwidth]{assets/elecdiagram.png}
+
+
+An ESP32 will be used, this will be cheaper and easier to scale compared to an arduino or RP. The display will be an alphanumeric display, anticipating that connecting the laptop may be more complicated than needed at the start. There will be a maximum of 4 stepper motor drivers. 2 will be used to push the syringes, and the other 2 will be used to open and close valves. These will be connected with general purpose I/O pins. Sensors will also be connected with GPIO. The computer will be connected through bluetooth, SPI, or other protocols like I2C, dependent on which is easiest. SPI will be attempted first.
+
+Power will be from the computer (5V) for the microcontroller, and from the wall with an adapter for the 12V needed for the motor driver. 
+
+\subsection{Timeline:} 
+
+Week 1:
+\begin{itemize}
+\item hours 1-3: Create simple program, like turning on a light when a button is pressed to ensure microcontroller and software for mc - set up properly
+\item hours 3-5: connect stepper motor driver and motor, without syringe. Create simple code to test. Add syringe, and get power and pressure measurements.
+\item hours 5-6: connect display, ensure its working.
+\item hours 6-7: connect display to motor power.
+\item hours 7-10: connect and test sensors with water.
+\item hours 10-15: test multiple setups for pump, using different valves and placements of valves.
+\end{itemize}
+
+after this, the work needed to be done is less known. The best setup will be taken, and modelled in Python/MATLAB before being converted into hardware. Errors with sensing and motor control will be fixed.
+
+
 % \subsection{Pressure Sensing}
 \section{Software}
 
@@ -66,21 +94,64 @@ There is huge variation in the pressure profile, and the software plans to offer
 % \subsubsection{Objectives and Constraints}
 % \subsubsection{PID Controller Design}
 % \subsubsection{Extensions}
-% \section{Project Resources and Costing}
-% \subsection{Prototype Bill of Materials}
-% \subsection{Final Product Cost Estimate}
-% \subsection{Resource Requests}
-% \section{Plan and Timescales}
-% \subsection{Lent Term Summary}
-% \subsection{Easter Term Plan}
-% \subsection{Milestones and Deliverables}
+\section{Project Resources and Costing}
+
+\subsection{Prototype Bill of Materials}
+\subsection{Final Product Cost Estimate}
+\subsection{Resource Requests}
+
+\section{Plan and Timescales}
+\subsubsection{Week 3, first half (May 14 - 18):}
+
+Initial familiarisation with different equipment/software. Control/Software will put together a list of setups with valves and placements of valves to test their efficacy. Mechanical will build basic prototype. Electrical will set up components so data can be tested. Data for DC pressure will be first taken, then easy waveforms will be tested, like a sine wave or triangle wave.
+
+\subsubsection{Week 3, second half (May 19 - 20):}
+
+Best setup, including factors like price and ease of control, will be determined. Control team will create simple model of closed-loop feedback needed, which can be converted to microcontroller hardware. Initial tests will be done, like creating DC and other waveforms, and ability to vary RPM. Mechanical will begin creating casing prototype.
+
+Software will begin building UI, in collaboration with Electrical. 
+
+\subsubsection{Week 4, first half (May 21 - 24):}
+
+Testing will continue, until waveform resembles heartbeat. Ability to vary parameters like RPM and waveform will be completed and be controllable. Software system and electrical system will be linked. Casing will be tested to see if all items are easily removable.
+
+Interim reports will be submitted.
+
+\subsubsection{Week 4, second half (May 25-27):}
+
+Design will be refined, and final casing will be tested and put together. poster and presentation will start being drafted
+
+\subsubsection{Week 5 (May 28 - June 5):}
+Poster and presentation will be finished and presented.
+
+\subsection{Lent Term Summary}
+\subsection{Easter Term Plan}
+\subsection{Milestones and Deliverables}
 % \section{Allocation of Work}
 % \subsection{Lent Term Work Breakdown}
 % \subsection{Easter Term Roles}
 % \subsection{Cross-Team Collaboration}
-% \section{Risk Assessment and Fallback}
-% \subsection{Technical Risks}
-% \subsection{Fallback Design}
+
+\section{Critical Steps and Mitigating Problems}
+Several tasks are critical to the success of the project.
+
+\subsubsection{Accuracy/consistency of readings}
+Sensors and motors must be able to be observed and controlled accurately. We are using stepper motors, which do not have a high level of control like servos. Closed-feedback loops will likely be used to solve this issue. If sensors are not accurate, more expensive devices may need to be used, which will drive up the cost of the final product.
+
+Fallback designs are also able to be used if the syringe pumps fail, such as a gravity pump or diaphragm pump. These designs would use the same materials as ordered for the syringe pump, so there wouldn't be a waiting time to get equipment to test them.
+
+\subsubsection{Implementing the control system}
+Even if each individual module works in a vacuum, they may not work when put together. This is why several configurations will be tested at the start of the project, though they won't be tested with a control system. More expensive servos may need to be used if a closed-feedback loop can't be accurately created.
+
+\subsubsection{Connecting software to hardware}
+The microcontroller should be able to be controlled by a GUI or CLI for ease of use and testing. The product won't be useable without this connection. To mitigate this risk, the simplest version of connection between software and hardware will be tested early, so that very basic commands 'start at 100 RPM' and 'stop' will be available, even if there may not be an automated system to tell the pump to stop.
+
+
+\section{Technical Risks}
+
+This project handles water and electrical components near eachother. Care should be taken to avoid any damage to the electronics, or damage to the person.
+
+
 % \section{Use of AI}
 % \appendix
 % \section{Detailed Calculations}
