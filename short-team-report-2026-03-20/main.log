@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.5)  18 MAR 2026 22:27
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.10.5)  19 MAR 2026 09:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/tahmidazam/Documents/iia/gm1/gm1-pump/team-report-2026-03-20/main.tex
-(/Users/tahmidazam/Documents/iia/gm1/gm1-pump/team-report-2026-03-20/main.tex
+**/Users/tahmidazam/Documents/iia/gm1/gm1-pump/short-team-report-2026-03-20/main.tex
+(/Users/tahmidazam/Documents/iia/gm1/gm1-pump/short-team-report-2026-03-20/main.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -695,9 +695,9 @@ File: omscmbrs.fd 2005/04/13 v8.1 (WaS)
 LaTeX Font Info:    Font shape `OT1/cmbr/b/n' in size <9> not available
 (Font)              Font shape `OT1/cmbr/bx/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `OT1/cmbr/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/cmbr/bx/n' tried instead on input line 37.
+(Font)              Font shape `OT1/cmbr/bx/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `OT1/cmbr/b/n' in size <12> not available
-(Font)              Font shape `OT1/cmbr/bx/n' tried instead on input line 63.
+(Font)              Font shape `OT1/cmbr/bx/n' tried instead on input line 61.
 
 
 [1
@@ -706,18 +706,18 @@ LaTeX Font Info:    Font shape `OT1/cmbr/b/n' in size <12> not available
 
 [2]
 LaTeX Font Info:    Font shape `OT1/cmbr/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmbr/bx/n' tried instead on input line 96.
+(Font)              Font shape `OT1/cmbr/bx/n' tried instead on input line 95.
 
 
 LaTeX Font Warning: Font shape `OT1/cmbr/bx/n' in size <8> not available
-(Font)              Font shape `OT1/cmbr/m/n' tried instead on input line 96.
+(Font)              Font shape `OT1/cmbr/m/n' tried instead on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'in' untranslated
-(biblatex)                at entry 'akohProstheticArteriovenousGrafts2009' on input line 96.
+(biblatex)                at entry 'akohProstheticArteriovenousGrafts2009' on input line 95.
 
 LaTeX Font Info:    Font shape `OT1/cmbr/m/it' in size <8> not available
-(Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 96.
+(Font)              Font shape `OT1/cmbr/m/sl' tried instead on input line 95.
 
 Package biblatex Warning: Using fallback definition for \mkbibdatelong.
 (biblatex)                The command should be defined in the .lbx file.
@@ -734,15 +734,15 @@ Package biblatex Warning: Using fallback definition for \mkbibordinal.
 
 
 Package biblatex Warning: Bibliography string 'july' untranslated
-(biblatex)                at entry 'akohProstheticArteriovenousGrafts2009' on input line 96.
+(biblatex)                at entry 'akohProstheticArteriovenousGrafts2009' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'pages' untranslated
-(biblatex)                at entry 'akohProstheticArteriovenousGrafts2009' on input line 96.
+(biblatex)                at entry 'akohProstheticArteriovenousGrafts2009' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'urlseen' untranslated
-(biblatex)                at entry 'akohProstheticArteriovenousGrafts2009' on input line 96.
+(biblatex)                at entry 'akohProstheticArteriovenousGrafts2009' on input line 95.
 
 
 Package biblatex Warning: Using fallback definition for \mkbibdateshort.
@@ -753,11 +753,11 @@ Package biblatex Warning: Using fallback definition for \mkbibdateshort.
 
 
 Package biblatex Warning: Bibliography string 'and' untranslated
-(biblatex)                at entry 'joynerSexDifferencesBlood2016' on input line 96.
+(biblatex)                at entry 'joynerSexDifferencesBlood2016' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'in' untranslated
-(biblatex)                at entry 'joynerSexDifferencesBlood2016' on input line 96.
+(biblatex)                at entry 'joynerSexDifferencesBlood2016' on input line 95.
 
 
 Package biblatex Warning: Using fallback definition for \mkbibdatelong.
@@ -768,11 +768,11 @@ Package biblatex Warning: Using fallback definition for \mkbibdatelong.
 
 
 Package biblatex Warning: Bibliography string 'pages' untranslated
-(biblatex)                at entry 'joynerSexDifferencesBlood2016' on input line 96.
+(biblatex)                at entry 'joynerSexDifferencesBlood2016' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'urlseen' untranslated
-(biblatex)                at entry 'joynerSexDifferencesBlood2016' on input line 96.
+(biblatex)                at entry 'joynerSexDifferencesBlood2016' on input line 95.
 
 
 Package biblatex Warning: Using fallback definition for \mkbibdateshort.
@@ -783,11 +783,11 @@ Package biblatex Warning: Using fallback definition for \mkbibdateshort.
 
 
 Package biblatex Warning: Bibliography string 'andothers' untranslated
-(biblatex)                at entry 'linIdentificationNormalBlood2016' on input line 96.
+(biblatex)                at entry 'linIdentificationNormalBlood2016' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'in' untranslated
-(biblatex)                at entry 'linIdentificationNormalBlood2016' on input line 96.
+(biblatex)                at entry 'linIdentificationNormalBlood2016' on input line 95.
 
 
 Package biblatex Warning: Using fallback definition for \mkbibdatelong.
@@ -798,11 +798,11 @@ Package biblatex Warning: Using fallback definition for \mkbibdatelong.
 
 
 Package biblatex Warning: Bibliography string 'april' untranslated
-(biblatex)                at entry 'linIdentificationNormalBlood2016' on input line 96.
+(biblatex)                at entry 'linIdentificationNormalBlood2016' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'urlseen' untranslated
-(biblatex)                at entry 'linIdentificationNormalBlood2016' on input line 96.
+(biblatex)                at entry 'linIdentificationNormalBlood2016' on input line 95.
 
 
 Package biblatex Warning: Using fallback definition for \mkbibdateshort.
@@ -813,11 +813,11 @@ Package biblatex Warning: Using fallback definition for \mkbibdateshort.
 
 
 Package biblatex Warning: Bibliography string 'and' untranslated
-(biblatex)                at entry 'loudonUseDimensionlessWomersley1998' on input line 96.
+(biblatex)                at entry 'loudonUseDimensionlessWomersley1998' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'in' untranslated
-(biblatex)                at entry 'loudonUseDimensionlessWomersley1998' on input line 96.
+(biblatex)                at entry 'loudonUseDimensionlessWomersley1998' on input line 95.
 
 
 Package biblatex Warning: Using fallback definition for \mkbibdatelong.
@@ -835,15 +835,15 @@ Package biblatex Warning: Using fallback definition for \mkbibordinal.
 
 
 Package biblatex Warning: Bibliography string 'march' untranslated
-(biblatex)                at entry 'loudonUseDimensionlessWomersley1998' on input line 96.
+(biblatex)                at entry 'loudonUseDimensionlessWomersley1998' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'pages' untranslated
-(biblatex)                at entry 'loudonUseDimensionlessWomersley1998' on input line 96.
+(biblatex)                at entry 'loudonUseDimensionlessWomersley1998' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'urlseen' untranslated
-(biblatex)                at entry 'loudonUseDimensionlessWomersley1998' on input line 96.
+(biblatex)                at entry 'loudonUseDimensionlessWomersley1998' on input line 95.
 
 
 Package biblatex Warning: Using fallback definition for \mkbibdateshort.
@@ -854,11 +854,11 @@ Package biblatex Warning: Using fallback definition for \mkbibdateshort.
 
 
 Package biblatex Warning: Bibliography string 'andothers' untranslated
-(biblatex)                at entry 'mcgroganArteriovenousFistulaOutcomes2015' on input line 96.
+(biblatex)                at entry 'mcgroganArteriovenousFistulaOutcomes2015' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'in' untranslated
-(biblatex)                at entry 'mcgroganArteriovenousFistulaOutcomes2015' on input line 96.
+(biblatex)                at entry 'mcgroganArteriovenousFistulaOutcomes2015' on input line 95.
 
 
 Package biblatex Warning: Using fallback definition for \mkbibdatelong.
@@ -876,15 +876,15 @@ Package biblatex Warning: Using fallback definition for \mkbibordinal.
 
 
 Package biblatex Warning: Bibliography string 'december' untranslated
-(biblatex)                at entry 'mcgroganArteriovenousFistulaOutcomes2015' on input line 96.
+(biblatex)                at entry 'mcgroganArteriovenousFistulaOutcomes2015' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'pages' untranslated
-(biblatex)                at entry 'mcgroganArteriovenousFistulaOutcomes2015' on input line 96.
+(biblatex)                at entry 'mcgroganArteriovenousFistulaOutcomes2015' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'urlseen' untranslated
-(biblatex)                at entry 'mcgroganArteriovenousFistulaOutcomes2015' on input line 96.
+(biblatex)                at entry 'mcgroganArteriovenousFistulaOutcomes2015' on input line 95.
 
 
 Package biblatex Warning: Using fallback definition for \mkbibdateshort.
@@ -895,11 +895,11 @@ Package biblatex Warning: Using fallback definition for \mkbibdateshort.
 
 
 Package biblatex Warning: Bibliography string 'and' untranslated
-(biblatex)                at entry 'sharmanExerciseBloodPressure2015' on input line 96.
+(biblatex)                at entry 'sharmanExerciseBloodPressure2015' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'in' untranslated
-(biblatex)                at entry 'sharmanExerciseBloodPressure2015' on input line 96.
+(biblatex)                at entry 'sharmanExerciseBloodPressure2015' on input line 95.
 
 
 Package biblatex Warning: Using fallback definition for \mkbibdatelong.
@@ -910,15 +910,15 @@ Package biblatex Warning: Using fallback definition for \mkbibdatelong.
 
 
 Package biblatex Warning: Bibliography string 'june' untranslated
-(biblatex)                at entry 'sharmanExerciseBloodPressure2015' on input line 96.
+(biblatex)                at entry 'sharmanExerciseBloodPressure2015' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'pages' untranslated
-(biblatex)                at entry 'sharmanExerciseBloodPressure2015' on input line 96.
+(biblatex)                at entry 'sharmanExerciseBloodPressure2015' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'urlseen' untranslated
-(biblatex)                at entry 'sharmanExerciseBloodPressure2015' on input line 96.
+(biblatex)                at entry 'sharmanExerciseBloodPressure2015' on input line 95.
 
 
 Package biblatex Warning: Using fallback definition for \mkbibdateshort.
@@ -929,11 +929,11 @@ Package biblatex Warning: Using fallback definition for \mkbibdateshort.
 
 
 Package biblatex Warning: Bibliography string 'and' untranslated
-(biblatex)                at entry 'westerhofArterialWindkessel2009' on input line 96.
+(biblatex)                at entry 'westerhofArterialWindkessel2009' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'in' untranslated
-(biblatex)                at entry 'westerhofArterialWindkessel2009' on input line 96.
+(biblatex)                at entry 'westerhofArterialWindkessel2009' on input line 95.
 
 
 Package biblatex Warning: Using fallback definition for \mkbibdatelong.
@@ -951,15 +951,15 @@ Package biblatex Warning: Using fallback definition for \mkbibordinal.
 
 
 Package biblatex Warning: Bibliography string 'february' untranslated
-(biblatex)                at entry 'westerhofArterialWindkessel2009' on input line 96.
+(biblatex)                at entry 'westerhofArterialWindkessel2009' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'pages' untranslated
-(biblatex)                at entry 'westerhofArterialWindkessel2009' on input line 96.
+(biblatex)                at entry 'westerhofArterialWindkessel2009' on input line 95.
 
 
 Package biblatex Warning: Bibliography string 'urlseen' untranslated
-(biblatex)                at entry 'westerhofArterialWindkessel2009' on input line 96.
+(biblatex)                at entry 'westerhofArterialWindkessel2009' on input line 95.
 
 
 Package biblatex Warning: Using fallback definition for \mkbibdateshort.
@@ -997,11 +997,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  15340 strings out of 473832
- 326152 string characters out of 5729481
- 1150004 words of memory out of 5000000
+ 326170 string characters out of 5729481
+ 1148004 words of memory out of 5000000
  38290 multiletter control sequences out of 15000+600000
  568321 words of font info for 70 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,5n,80p,2462b,4924s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,5n,80p,2468b,4921s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (4 pages, 11984 bytes).
+Output written on main.xdv (4 pages, 11980 bytes).
