@@ -404,6 +404,31 @@
       \endverb
       \keyw{Diagnosis}
     \endentry
+    \entry{smuts2002pid}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=2ab5fa6316d169e64f1ad516a5451aa1}{%
+           family={Smuts},
+           familyi={S\bibinitperiod},
+           given={Jacques},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ab5fa6316d169e64f1ad516a5451aa1}
+      \strng{fullhash}{2ab5fa6316d169e64f1ad516a5451aa1}
+      \strng{fullhashraw}{2ab5fa6316d169e64f1ad516a5451aa1}
+      \strng{bibnamehash}{2ab5fa6316d169e64f1ad516a5451aa1}
+      \strng{authorbibnamehash}{2ab5fa6316d169e64f1ad516a5451aa1}
+      \strng{authornamehash}{2ab5fa6316d169e64f1ad516a5451aa1}
+      \strng{authorfullhash}{2ab5fa6316d169e64f1ad516a5451aa1}
+      \strng{authorfullhashraw}{2ab5fa6316d169e64f1ad516a5451aa1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Canadian Process Equipment \& Control News}
+      \field{title}{PID controllers explained}
+      \field{volume}{2}
+      \field{year}{2002}
+    \endentry
     \entry{westerhofArterialWindkessel2009}{article}{}{}
       \name{author}{3}{}{%
         {{hash=7728ae0453e78798cc091a582ee637d3}{%

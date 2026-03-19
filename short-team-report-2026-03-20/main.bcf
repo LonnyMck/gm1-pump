@@ -2379,6 +2379,7 @@
     <bcf:citekey order="5" intorder="1">sharmanExerciseBloodPressure2015</bcf:citekey>
     <bcf:citekey order="6" intorder="1">westerhofArterialWindkessel2009</bcf:citekey>
     <bcf:citekey order="7" intorder="1">loudonUseDimensionlessWomersley1998</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">smuts2002pid</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
