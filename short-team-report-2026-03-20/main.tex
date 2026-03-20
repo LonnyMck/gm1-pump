@@ -54,7 +54,7 @@
 \maketitle
 
 \begin{abstract}
-    The bioengineering department are investigating the applications of collagen-based synthetic blood vessels for haemodialysis, involving the measurement of vessel compliance under different pressure profiles. The existing peristaltic pump setup suffers from poor pressure sensor dynamic range, unwanted pressure pulsations requiring extensive compliance tubing, and non-physiological pulse rates. We propose a dual-syringe pump system driven by stepper motors and lead screws, with voice coil actuators or pinch valves to superimpose a physiological AC waveform onto a steady DC pressure baseline. A PID-based control system running on an ESP32 microcontroller enables real-time waveform tracking, with software providing both GUI and CLI interfaces for experiment configuration and data logging. The estimated prototype cost is under \SI{180}{\pounds}, with a final product target of \SIrange{50}{100}{\pounds}, offering a low-cost, reproducible alternative suitable for parallel graft testing.
+    The bioengineering department are investigating the applications of collagen-based synthetic blood vessels for haemodialysis, involving the measurement of vessel compliance under different pressure profiles. The existing peristaltic pump setup suffers from poor pressure sensor dynamic range, unwanted pressure pulsations requiring extensive compliance tubing, and non-physiological pulse rates. We propose a dual-syringe pump system driven by stepper motors and lead screws, with voice coil actuators or pinch valves to superimpose a physiological AC waveform onto a steady DC pressure baseline. A PID-based control system running on an ESP32 microcontroller enables real-time waveform tracking, with software providing both GUI and CLI interfaces for experiment configuration and data logging. The estimated prototype cost is under \SI{210}{\pounds}, with a final product target of \SIrange{50}{100}{\pounds}, offering a low-cost, reproducible alternative suitable for parallel graft testing.
 \end{abstract}
 
 \section{Clinical motivation}
@@ -371,8 +371,13 @@ There are a few ways to extend the control system, if there is time. For the lab
         Silicone tubing
                        & \href{https://www.polymax.co.uk/silicone/silicone-tubing}{\uline{Polymax listing}}
                        & 15.75                                                                                                                                                                 & 5\,m min.         & 5\,mm OD, 1\,mm wall                  \\
+        Voice coil actuator
+                       &
+                       & 30.00
+                       & 1
+                       & 10\,Hz, 1.31\,mm in 0.1\,s                                                                                                                                                                                                        \\
         \midrule
-        \textbf{total} &                                                                                                                                                                       & 179.71            &                                       \\
+        \textbf{total} &                                                                                                                                                                       & 209.71            &                                       \\
         \bottomrule
     \end{tabularx}
     \caption{Bill of materials.}
