@@ -2374,12 +2374,16 @@
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">mcgroganArteriovenousFistulaOutcomes2015</bcf:citekey>
     <bcf:citekey order="2" intorder="1">akohProstheticArteriovenousGrafts2009</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">linIdentificationNormalBlood2016</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">joynerSexDifferencesBlood2016</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">sharmanExerciseBloodPressure2015</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">westerhofArterialWindkessel2009</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">loudonUseDimensionlessWomersley1998</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">smuts2002pid</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">PETGHFa</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">NonBacklashSpur</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">PneumaticSolenoidValve</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">linIdentificationNormalBlood2016</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">joynerSexDifferencesBlood2016</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">sharmanExerciseBloodPressure2015</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">westerhofArterialWindkessel2009</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">loudonUseDimensionlessWomersley1998</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">smuts2002pid</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">KamoerKK1800Peristaltic</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

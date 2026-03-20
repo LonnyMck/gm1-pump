@@ -73,6 +73,28 @@
       \verb https://doi.org/10.1177/112972980901000301
       \endverb
     \endentry
+    \entry{NonBacklashSpur}{online}{}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Gear backlash is the clearance between two mating gears. Article describes gear backlash and the gear backlash prevention, and the anti backlash gear design techniques.Design engineers across the industry use different anti backlash gear design techniques, some of them are patented as well. We will discuss the spring loaded scissor gear technique here. I have created a conceptual ProE model for the purpose of explaining the technique. Most of the gear train applications you see around are always contains certain amounts of backlash in it. For some of the application, gear backlash is helpful and thus kept intentionally and for some, it is not desired at all. The gear backlash prevention techniques or the anti backlash gear design techniques}
+      \field{langid}{american}
+      \field{shorttitle}{Anti ({{Non}}) {{Backlash Spur Gear Techniques}}}
+      \field{title}{Anti ({{Non}}) {{Backlash Spur Gear Techniques}}: {{Gear Backlash Prevention Method}}, {{Scissor Gear}}}
+      \field{urlday}{20}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/tahmidazam/Zotero/storage/DKCIWI2M/65169-how-does-an-anti-backlash-gear-works.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.brighthubengineering.com/machine-design/65169-how-does-an-anti-backlash-gear-works/
+      \endverb
+      \verb{url}
+      \verb https://www.brighthubengineering.com/machine-design/65169-how-does-an-anti-backlash-gear-works/
+      \endverb
+    \endentry
     \entry{joynerSexDifferencesBlood2016}{article}{}{}
       \name{author}{3}{}{%
         {{hash=0ce1da9fff658edb98ef9d38cf2b978a}{%
@@ -129,6 +151,30 @@
       \endverb
       \verb{url}
       \verb https://onlinelibrary.wiley.com/doi/abs/10.1113/EP085146
+      \endverb
+    \endentry
+    \entry{KamoerKK1800Peristaltic}{online}{}{}
+      \list{organization}{1}{%
+        {manuals.plus}%
+      }
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Instruction manual for the Kamoer KK1800 Peristaltic Pump Head, featuring stainless steel rotors and designed for use with UIP2 WIFI Peristaltic Pumps. Includes setup, operation, maintenance, specifications, and troubleshooting.}
+      \field{langid}{american}
+      \field{title}{Kamoer {{KK1800 Peristaltic Pump Head Instruction Manual}}}
+      \field{urlday}{20}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/tahmidazam/Zotero/storage/4BZSE8SR/1005007435106909.html
+      \endverb
+      \verb{urlraw}
+      \verb https://manuals.plus/ae/1005007435106909
+      \endverb
+      \verb{url}
+      \verb https://manuals.plus/ae/1005007435106909
       \endverb
     \endentry
     \entry{linIdentificationNormalBlood2016}{article}{}{}
@@ -342,6 +388,49 @@
       \endverb
       \verb{url}
       \verb https://www.sciencedirect.com/science/article/pii/S0741521415016274
+      \endverb
+    \endentry
+    \entry{PETGHFa}{online}{}{}
+      \list{organization}{1}{%
+        {Bambu Lab UK Store}%
+      }
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{abstract}{PETG HF is a fully optimized PETG filament designed specifically for high-speed printing. With a default printing speed that is twice as fast as standard PETG filaments, PETG HF takes your printing efficiency to new heights. It effectively addresses common issues such as oozing and clumping associated with regular PETG, ensuring smoother and more reliable prints. The new matte finish not only enhances the aesthetic by smoothing out uneven gloss during speed transitions but also provides a consistently uniform look. Offering greater durability and toughness than PLA, PETG HF is the ideal choice for creating long-lasting items with an improved finish and faster production times.}
+      \field{langid}{english}
+      \field{title}{{{PETG HF}}}
+      \field{urlday}{20}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/tahmidazam/Zotero/storage/XBDGJZ8V/petg-hf.html
+      \endverb
+      \verb{urlraw}
+      \verb https://uk.store.bambulab.com/products/petg-hf
+      \endverb
+      \verb{url}
+      \verb https://uk.store.bambulab.com/products/petg-hf
+      \endverb
+    \endentry
+    \entry{PneumaticSolenoidValve}{online}{}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{title}{Pneumatic {{Solenoid Valve}} | 3 2 \& 2 {{Way Valve}} | {{RS}}}
+      \field{urlday}{20}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /Users/tahmidazam/Zotero/storage/ZUDJJLMM/pneumatic-solenoid-valves.html
+      \endverb
+      \verb{urlraw}
+      \verb https://uk.rs-online.com/web/c/pneumatics-hydraulics/pneumatic-valves/pneumatic-solenoid-valves/
+      \endverb
+      \verb{url}
+      \verb https://uk.rs-online.com/web/c/pneumatics-hydraulics/pneumatic-valves/pneumatic-solenoid-valves/
       \endverb
     \endentry
     \entry{sharmanExerciseBloodPressure2015}{article}{}{}
