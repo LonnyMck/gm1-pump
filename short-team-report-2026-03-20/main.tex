@@ -8,6 +8,15 @@
 \usepackage[backend=biber, style=numeric]{biblatex}
 \usepackage{multicol}
 \usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage[normalem]{ulem}
+\usepackage{tabularx}
+\usepackage[labelfont=bf, textfont=normalfont, justification=raggedright, singlelinecheck=false, font=small]{caption}
+\usepackage{float}
+
 \addbibresource{gm1_short_team_report.bib}
 \title{
     Short Team Report\\[0.5em] 
@@ -62,7 +71,25 @@ Through the software, laboratory personnel will be able to choose a pressure pro
 
 There is huge variation in the pressure profile, and the software plans to offer multiple perspectives by which to model the cardiovascular system. Basic controls involve setting target systolic pressures, diastolic pressures, and heart rate. In addition, we can offer easier set up of experiment sets by incorporating normative data that adjusts these physiological variables for age \supercite{linIdentificationNormalBlood2016}, sex \supercite{joynerSexDifferencesBlood2016}, level of exercise \supercite{sharmanExerciseBloodPressure2015}, temperature, and the type of vessel (i.e., distance from the heart, such as artery, capillary, or venule). The chosen configuration and parameters can be exported, stored, or shared as JavaScript Object Notation (JSON) files for repeatability. The mathematical modelling of pressure profiles consists of splitting the target signal into two components: a constant mean DC pressure component, and an AC component. The DC component we model using the Windkessel model \supercite{westerhofArterialWindkessel2009} and literature values for the Womersley number for different vessel types, sensitive to the aging process \supercite{loudonUseDimensionlessWomersley1998}. The AC component we emulate by conducting Fourier analysis on literature representations of the cardiac cycle, to capture nuances such as the dicrotic notch.
 
-\section{Control System}
+\section{Electrical}
+
+An ESP32 will be used, this will be cheaper and easier to scale compared to an arduino or RP. The display will be an alphanumeric display, anticipating that connecting the laptop may be more complicated than needed at the start. There will be a maximum of 4 stepper motor drivers. 2 will be used to push the syringes, and the other 2 will be used to open and close valves. These will be connected with general purpose I/O pins. Sensors will also be connected with GPIO. The computer will be connected through bluetooth, SPI, or other protocols like I2C, dependent on which is easiest. SPI will be attempted first. Power will be from the computer (5V) for the microcontroller, and from the wall with an adapter for the 12V needed for the motor driver.
+
+\subsection{Timeline}
+
+During week 1:
+\begin{itemize}[noitemsep]
+    \item hours 1-3: Create simple program, like turning on a light when a button is pressed to ensure microcontroller and software for mc - set up properly
+    \item hours 3-5: connect stepper motor driver and motor, without syringe. Create simple code to test. Add syringe, and get power and pressure measurements.
+    \item hours 5-6: connect display, ensure its working.
+    \item hours 6-7: connect display to motor power.
+    \item hours 7-10: connect and test sensors with water.
+    \item hours 10-15: test multiple setups for pump, using different valves and placements of valves.
+\end{itemize}
+After this, the work needed to be done is less known. The best setup will be taken, and modelled in Python/MATLAB before being converted into hardware. Errors with sensing and motor control will be fixed.
+
+
+\section{Control}
 \subsection{Objectives and Constraints}
 The primary objective of this control system is to track a continuously varying pressure waveform in real time, in order to make the pressure waveform received in the test vessel as close as possible to the reference pressure inputted. There is a hard constraint of the maximum safe pressure as vessel bursting is irreversible and expensive. However, the main challenge is handling the system nonlinearities. To name a few, the tubing compliance stores energy, the switching of syringes will create dead zones in the flow, the inertia of the fluid will create a lag, and the stepper motor is hard to keep track of and can slip.
 \subsection{PID Controller Design}
@@ -89,6 +116,153 @@ There are a few ways to extend the control system, if there is time. For the lab
 % \section{Detailed Calculations}
 % \section{Component Datasheets and Specifications}
 % \section{Notebook Extracts}
+
+
+\section{Bill of materials}
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}X l l l l}
+        \toprule
+        \textbf{item}  & \textbf{link}                                                                                                                                                         & \textbf{cost (£)} & \textbf{qty.}        & \textbf{notes} \\
+        \midrule
+        Microcontroller: ESP32 with Bluetooth
+                       & \href{https://www.amazon.co.uk/diymore-DevKitC-1-Expansion-Development-Bluetooth-ESP32-S3-Breakout-Board/dp/B0FX3T2HN7}{\uline{Amazon listing}}
+                       & 16.58                                                                                                                                                                 & 1                 &                                       \\
+
+        Stepper motors (NEMA 17)
+                       & \href{https://www.stepperonline.co.uk/3pcs-e-series-nema-17-bipolar-1-8deg-17ncm-24-07oz-in-1a-42x42x23mm-4-wires-3-17he08-1004s.html}{\uline{StepperOnline listing}}
+                       & 9.67                                                                                                                                                                  & 4                 &                                       \\
+
+        Stepper motor driver: TMC2209
+                       & \href{https://www.amazon.co.uk/DIGISHUO-TMC2209-Stepsticks-Heatsink-Motherboard/dp/B0F93K9PKS}{\uline{Amazon listing}}
+                       & 17.99                                                                                                                                                                 & 1 (×6 pack)       &                                       \\
+
+        Alphanumeric display
+                       & \href{https://www.digikey.co.uk/en/products/detail/kingbright/BA56-12SURKWA/4098538}{\uline{Digi-Key listing}}
+                       & 3.70                                                                                                                                                                  & 2                 &                                       \\
+
+        Pinch valve
+                       & \href{https://www.amazon.co.uk/TAILONZ-PNEUMATIC-Connect-Controller-Straight/dp/B0DPKJ96NF}{\uline{Amazon listing}}
+                       & 9.99                                                                                                                                                                  & 1 (×5 pack)       & 6\,mm tubing                          \\
+
+        3/2 ball valve
+                       & \href{https://www.amazon.co.uk/TA-VIGOR-Shut-Off-Fittings-Non-Slip-Handle-3/dp/B0FPFTQHFG}{\uline{Amazon listing}}
+                       & 7.99                                                                                                                                                                  & 1 (×3 pack)       & 6\,mm tubing                          \\
+
+        One-way valve
+                       & \href{https://uk.rs-online.com/web/p/pneumatic-non-return-valves/9160943}{\uline{RS listing}}
+                       & 7.04                                                                                                                                                                  & 4                 & 6\,mm tubing                          \\
+
+        Syringes (60--100\,ml)
+                       & \href{https://ukmedi.co.uk/products/60ml-enfit-reusable-medicina-syringe-medicina-lhe60-ukmedi-co-uk}{\uline{UKMedi 60\,ml}} /
+        \href{https://ukmedi.co.uk/products/100ml-enteral-isosaf-home2-standard-enfit-tip-syringes}{\uline{100\,ml alt.}}
+                       & 25.99                                                                                                                                                                 & 5 (set)           &                                       \\
+
+        Syringe for testing
+                       & \href{https://www.amazon.co.uk/LargeCapacity-PlasticSyringe-Measuring-Syringefor-irrigation/dp/B0F8NPMMF2}{\uline{Amazon listing}}
+                       & 5.59                                                                                                                                                                  & 2                 &                                       \\
+
+        Silicone tubing
+                       & \href{https://www.polymax.co.uk/silicone/silicone-tubing}{\uline{Polymax listing}}
+                       & 15.75                                                                                                                                                                 & 5\,m min.         & 5\,mm OD, 1\,mm wall                  \\
+        \midrule
+        \textbf{total} &                                                                                                                                                                       & 179.71            &                                       \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Bill of materials.}
+\end{table}
+
+The breakout board with the microcontroller will already include an LED and switches, as well as being pre-soldered, for quick testing. It will also have bluetooth and different peripherals, like I2C protocols available.
+
+\subsection{Final product cost}
+The final product cost is hard to determine as different configurations may be used. The current estimate is between 50 - 100 pounds, broken down in the table below.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lll}
+        \toprule
+        \textbf{item}               & \textbf{qty.} & \textbf{unit cost (£)} \\
+        \midrule
+        microcontroller             & 1             & 5--20                  \\
+        motor controller board      & 1             & 10--20                 \\
+        lead screw \& stepper motor & 2             & 15                     \\
+        pressure sensors            & 2             & 3--10                  \\
+        valves                      & 2--6          & 2                      \\
+        syringes                    & 2             & 1                      \\
+        tubing                      & ---           & ---                    \\
+        \midrule
+        \textbf{total}              &               & \textbf{50--100}       \\
+        \bottomrule
+    \end{tabular}
+    \caption{Final product cost estimate.}
+\end{table}
+
+\subsection{Departmental resource requests}
+Within the department, we require:
+
+\begin{itemize}[noitemsep]
+    \item 3D printing materials;
+    \item Tubing, if available;
+    \item Pressure sensors (as discussed with Dr. Peter Long), including T-type connectors;
+    \item Lead screw materials;
+    \item Breadboard, including pins;
+    \item Soldering equipment and material; and
+    \item Perfboard (later in timeline).
+\end{itemize}
+
+\section{Plan and Timescales}
+
+\begin{table}[h]
+    \centering
+    \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{4cm} X}
+        \toprule
+        \textbf{time period} & \textbf{planned activities}                                                                                                                                                                                                                                                                                                               \\
+        \midrule
+
+        Week 3, first half (May 14--18)
+                             & Initial familiarisation with equipment and software. Control/Software will define valve configurations and test setups. Mechanical will build a basic prototype. Electrical will prepare components for data acquisition. Initial DC pressure data will be collected, followed by simple waveforms (e.g.\ sine and triangle).             \\
+
+        Week 3, second half (May 19--20)
+                             & Optimal setup selected based on cost and controllability. Control team will develop a simple closed-loop feedback model for microcontroller implementation. Initial functional tests (DC, waveform generation, RPM control). Mechanical will begin casing prototype. Software will begin UI development in collaboration with Electrical. \\
+
+        Week 4, first half (May 21--24)
+                             & Continued testing to achieve physiologically realistic waveforms. Parameter control (RPM, waveform shape) finalised. Software and electrical systems integrated. Casing tested for accessibility and modularity. Interim reports submitted.                                                                                               \\
+
+        Week 4, second half (May 25--27)
+                             & Design refinement and final casing assembly. Poster and presentation drafting begins.                                                                                                                                                                                                                                                     \\
+
+        Week 5 (May 28--June 5)
+                             & Poster and presentation completed and delivered.                                                                                                                                                                                                                                                                                          \\
+
+        \bottomrule
+    \end{tabularx}
+    \caption{Project plan and timescales}
+\end{table}
+
+
+\section{Critical steps}
+Several tasks are critical to the success of the project. These are described below, as well as the steps we will take to mitigate any potential issues.
+
+\subsection{Accuracy and consistency of readings}
+Sensors and motors must be able to be observed and controlled accurately. We are using stepper motors, which do not have a high level of control like servos. Closed-feedback loops will likely be used to solve this issue. If sensors are not accurate, more expensive devices may need to be used, which will drive up the cost of the final product. Fallback designs are also able to be used if the syringe pumps fail, such as a gravity pump or diaphragm pump. These designs would use the same materials as ordered for the syringe pump, so there wouldn't be a waiting time to get equipment to test them.
+
+\subsection{Implementing the control system}
+Even if each individual module works in a vacuum, they may not work when put together. This is why several configurations will be tested at the start of the project, though they won't be tested with a control system. More expensive servos may need to be used if a closed-feedback loop can't be accurately created.
+
+\subsection{Connecting software to hardware}
+The microcontroller should be able to be controlled by a GUI or CLI for ease of use and testing. The product won't be useable without this connection. To mitigate this risk, the simplest version of connection between software and hardware will be tested early, so that very basic commands 'start at 100 RPM' and 'stop' will be available, even if there may not be an automated system to tell the pump to stop.
+
+\section{Safety considerations}
+This project handles water and electrical components near eachother. Care should be taken to avoid any damage to the electronics, or damage to the person.
+
+\section{Use of AI}
+
+Use of AI involves:
+
+\begin{itemize}[noitemsep]
+    \item the initial cost estimate and finding certain items online, like valves; however all final prices listed are taken from website links;
+    \item planning report and presentation structure against a task brief; proofreading report/presentation content against the brief to find gaps;
+\end{itemize}
 
 \newpage
 \begingroup
