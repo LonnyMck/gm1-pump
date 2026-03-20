@@ -57,6 +57,8 @@
     The bioengineering department are investigating the applications of collagen-based synthetic blood vessels for haemodialysis, involving the measurement of vessel compliance under different pressure profiles. The existing peristaltic pump setup suffers from poor pressure sensor dynamic range, unwanted pressure pulsations requiring extensive compliance tubing, and non-physiological pulse rates. We propose a dual-syringe pump system driven by stepper motors and lead screws, with voice coil actuators or pinch valves to superimpose a physiological AC waveform onto a steady DC pressure baseline. A PID-based control system running on an ESP32 microcontroller enables real-time waveform tracking, with software providing both GUI and CLI interfaces for experiment configuration and data logging. The estimated prototype cost is under \SI{210}{\pounds}, with a final product target of \SIrange{50}{100}{\pounds}, offering a low-cost, reproducible alternative suitable for parallel graft testing.
 \end{abstract}
 
+\newpage
+
 \section{Clinical motivation}
 
 Haemodialysis is the process of removing blood from the body, passing it through a dialyser which filters it, and then returning it to the body, and is indicated in cases of kidney failure.
@@ -130,6 +132,7 @@ In the case of artificial vessels for uses in bypass grafts, they offer greater 
 In order to tackle the three problems found in the laboratory setup, a specification list for our pump has been produced. Each requirement has been classified as high or low value depending on how much risk it involves and how essential it is to the product functionality.
 
 \begin{table}[H]
+    \small
     \centering
     \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{4.5cm} p{2cm} X}
         \toprule
@@ -232,10 +235,11 @@ Therefore, a hybrid approach will be adopted. Both pinch valves and voice coil a
 \subsection{Pressure sensing}
 
 \begin{table}[h]
+    \small
     \centering
     \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{4cm} p{3cm} X}
         \toprule
-        \textbf{Requirement} & \textbf{Value}                                                                                    & \textbf{Rationale} \\
+        \textbf{requirement} & \textbf{value}                                                                                    & \textbf{rationale} \\
         \midrule
 
         Operating range
@@ -326,6 +330,7 @@ There are a few ways to extend the control system, if there is time. For the lab
 
 \section{Bill of materials}
 \begin{table}[H]
+    \small
     \centering
     \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}X l l l l}
         \toprule
@@ -389,6 +394,7 @@ The breakout board with the microcontroller will already include an LED and swit
 The final product cost is hard to determine as different configurations may be used. The current estimate is between 50 - 100 pounds, broken down in the table below.
 
 \begin{table}[H]
+    \small
     \centering
     \begin{tabular}{lll}
         \toprule
@@ -425,15 +431,76 @@ Within the department, we require:
 
 \subsection{Partition of work during Lent Term}
 
-\begin{table}[h]
+\begin{table}[H]
+    \small
     \centering
-    \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{4cm} X}
+    \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{1.5cm} X}
         \toprule
-        \textbf{Name} & \textbf{Activities}                                                                                                                                                                                                                                   \\
+        \textbf{name} & \textbf{activities}                                                                                                                                                               \\
+
+        \midrule
+        Lonnie
+                      & \begin{itemize}[nosep, leftmargin=*]
+                            \item Researched:
+                                  \begin{itemize}[nosep, leftmargin=*]
+                      \item Electrical components and architecture
+                      \item Types of valves, and feasibility
+                      \item Feasibility of different pumps, including where they could be bought
+                  \end{itemize}
+                            \item Bill of materials:
+                                  \begin{itemize}[nosep, leftmargin=*]
+                      \item Validated that all items needed are in BOM
+                      \item Found links to where items could be bought, and that they were both cheap and within specifications
+                  \end{itemize}
+                            \item Estimated final cost, especially when finding areas where the final cost may increase or decrease.
+                            \item Drew most diagrams for presentation and report.
+                            \item Created Easter timeline:
+                                  \begin{itemize}[nosep, leftmargin=*]
+                      \item Marked down critical tasks and steps for mitigation
+                      \item Scheduled tasks so there would be as little `downtime' as possible for different team members, and there would be rigorous amounts of testing, especially in the first three days to ensure we're on track
+                  \end{itemize}
+                        \end{itemize}                                                                           \\
+
+        \midrule
+        Lucy
+                      & \begin{itemize}[nosep, leftmargin=*]
+                            \item Conducted feasibility study of gravity and syringe pump mechanisms, including initial calculations for pressures and fluid circuit diagrams.
+                            \item Developed dual syringe pump concept and operating logic to achieve continuous flow without pressure drops.
+                            \item Research into methods of waveform generation through motor (and syringe) speed variation.
+                            \item Researched and evaluated different valve configurations to remove backflow (including: check, 3/2 and pinch valves).
+                            \item Researched different 3D printer materials for use in syringe housing.
+                        \end{itemize}                                 \\
+        \midrule
+        Luca
+                      & \begin{itemize}[nosep, leftmargin=*]
+                            \item Created a blood flow simulation app using ChatGPT to understand the flow rates required in different vessels and how age, sex and cardiac health influences pulse profile.
+                            \item Critically evaluated current laboratory setup to determine main problem areas of current setup and produce a requirements list for our pump.
+                            \item Analysed current pumps on the market against our required criteria to choose the optimal design.
+                            \item Created initial designs for the dual-syringe pump setup and pressure modulation system.
+                            \item Conducted in-depth calculations to determine specifications for pump components:
+                                  \begin{itemize}[nosep, leftmargin=*]
+                      \item Motor torque and speed calculations + gearing requirements
+                      \item Syringe sizing and forces on plunger required to achieve dialysis flow rates + refill periods
+                      \item Generation of systolic peak by compressing the tube or altering the syringe flow rate
+                  \end{itemize}
+                            \item Researched appropriate pressure sensors including type (gauge) and operating range (up to 40\,kPa).
+                            \item Researched how pinch valves and voice coil actuators can be used to generate pressure pulses in the flow.
+                        \end{itemize}   \\
         \midrule
 
         Tahmid
-                      & Preliminary modelling of a peristaltic pump to view the pressure profile. Calculations and modelling of the syringe force. Research on clinical motivations. Research on software options. Typesetting the presentation and short report in \LaTeX{}. \\
+                      & \begin{itemize}[nosep, leftmargin=*]
+                            \item Preliminary modelling of a peristaltic pump using Claude to view the pressure profile.
+                            \item Research on the variation of the cardiac pressure profile with age, sex, exercise.
+                            \item Research on the modelling of the cardiac pressure profile (Windkessel, Womersley, Fourier analysis based methods).
+                            \item Calculations and modelling of the syringe force.
+                            \item Research on clinical motivations and graft applications (haemodialysis, bypass surgery).
+                            \item Research on software options (cross-platform options, input/output using pandas, data analysis in scipy, signal processing, UI solutions in Qt, Python, React, web servers).
+                            \item Planned the structure and formatting goals for the presentation and short report.
+                            \item Typesetting the presentation and short report in \LaTeX{}.
+                        \end{itemize} \\
+
+        \midrule
 
         \bottomrule
     \end{tabularx}
@@ -441,7 +508,8 @@ Within the department, we require:
 \end{table}
 
 \subsection{Easter Term}
-\begin{table}[h]
+\begin{table}[H]
+    \small
     \centering
     \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{4cm} X}
         \toprule
@@ -496,6 +564,8 @@ Use of AI involves:
 \begin{itemize}[noitemsep]
     \item the initial cost estimate and finding certain items online, like valves; however all final prices listed are taken from website links (Lonnie);
     \item planning report and presentation structure against a task brief; proofreading report/presentation content against the brief to find gaps (Tahmid);
+    \item To quickly build python scripts implementing stated physiological models (Tahmid);
+    \item To help format and discover \LaTeX{} features and typesetting rules (Tahmid);
     \item To learn quickly about possible mechanical components that could be implemented (e.g 3/2 valves or voice coil actuators) (Lucy);
     \item To generate quick and simple calculations for feasibility studies into pump designs (e.g height required for various pressures in the gravity pump), checked with hand calculations (Lucy);
     \item To reword paragraphs but not generate content (Luca);
@@ -510,55 +580,59 @@ Use of AI involves:
 
 \appendix
 \section{Appendix}
-\subsection{Estimating force at the syringe plunger}
-The force required to operate a syringe pump was estimated assuming laminar flow through a tube of length $L$ and radius $R_t$. Using the Poiseuille equation, the volumetric flow rate $Q$ generates a pressure drop $\Delta P$, giving a plunger force:
-\begin{equation*}
-    F = \Delta P \cdot A_s = \frac{8 \eta L Q R_s^2}{R_t^4}
-\end{equation*}
-where $R_s$ is the syringe radius and $\eta$ the fluid viscosity. For typical parameters: $L = \SI{2}{\metre}$, $R_t = \SI{2}{\milli\metre}$, $R_s = \SI{1.3}{\centi\metre}$, $Q = \SI{300}{\milli\litre\per\minute}$, $\eta = \SI{1e-3}{\pascal\second}$, the resulting plunger force is $F = \SI{0.845}{\newton}$. This corresponds to a pressure drop of $\Delta P = \SI{5000}{\pascal} = \SI{37.5}{\mmHg}$.
+\begin{multicols}{2}
 
-\subsection{Pulse rate of existing peristaltic pump}
+    \subsection{Estimating force at the syringe plunger}
+    The force required to operate a syringe pump was estimated assuming laminar flow through a tube of length $L$ and radius $R_t$. Using the Poiseuille equation, the volumetric flow rate $Q$ generates a pressure drop $\Delta P$, giving a plunger force:
+    \begin{equation*}
+        F = \Delta P \cdot A_s = \frac{8 \eta L Q R_s^2}{R_t^4}
+    \end{equation*}
+    where $R_s$ is the syringe radius and $\eta$ the fluid viscosity. For typical parameters: $L = \SI{2}{\metre}$, $R_t = \SI{2}{\milli\metre}$, $R_s = \SI{1.3}{\centi\metre}$, $Q = \SI{300}{\milli\litre\per\minute}$, $\eta = \SI{1e-3}{\pascal\second}$, the resulting plunger force is $F = \SI{0.845}{\newton}$. This corresponds to a pressure drop of $\Delta P = \SI{5000}{\pascal} = \SI{37.5}{\mmHg}$.
 
-The existing peristaltic pump produces 3 pulses per revolution, giving $\text{BPM} = 3 \times \text{RPM}$, where $\text{RPM} = \dot{V} / V_\text{rev}$. The volume displaced per revolution is:
-\begin{equation}
-    V_\text{rev} = \pi D \cdot \pi r^2 = \pi \times \qty{37}{\milli\metre} \times \pi \times (\qty{2.4}{\milli\metre})^2 = \qty{2094}{\milli\metre\cubed}
-\end{equation}
-where $D = \qty{37}{\milli\metre}$ is the pump head diameter (product brochure \cite{KamoerKK1800Peristaltic}) and $r = \qty{2.4}{\milli\metre}$ assuming standard \qty{4.8}{\milli\metre} silicone tubing. At a flow rate of \qty{400}{\milli\litre\per\minute}:
-\begin{equation}
-    \text{BPM} = 3 \times \frac{\qty{400}{\milli\litre\per\minute}}{\qty{2.094}{\milli\litre}} \approx 573 \text{ beats per minute}
-\end{equation}
-This far exceeds the physiological range of \qtyrange{60}{100}{beats\per\minute}, confirming the existing pump is unsuitable for replicating a physiological pulse waveform.
+    \subsection{Pulse rate of existing peristaltic pump}
 
-\subsection{Lead screw speed}
+    The existing peristaltic pump produces 3 pulses per revolution, giving $\text{BPM} = 3 \times \text{RPM}$, where $\text{RPM} = \dot{V} / V_\text{rev}$. The volume displaced per revolution is:
+    \begin{align*}
+        V_\text{rev} & = \pi D \cdot \pi r^2 = \pi \times \qty{37}{\milli\metre} \times \pi \times (\qty{2.4}{\milli\metre})^2 \\
+                     & = \qty{2094}{\milli\metre\cubed}
+    \end{align*}
+    where $D = \qty{37}{\milli\metre}$ is the pump head diameter (product brochure \cite{KamoerKK1800Peristaltic}) and $r = \qty{2.4}{\milli\metre}$ assuming standard \qty{4.8}{\milli\metre} silicone tubing. At a flow rate of \qty{400}{\milli\litre\per\minute}:
+    \begin{equation}
+        \text{BPM} = 3 \times \frac{\qty{400}{\milli\litre\per\minute}}{\qty{2.094}{\milli\litre}} \approx 573 \text{ beats per minute}
+    \end{equation}
+    This far exceeds the physiological range of \qtyrange{60}{100}{beats\per\minute}, confirming the existing pump is unsuitable for replicating a physiological pulse waveform.
 
-The lead screw speed in RPM is derived from the required flow rate $Q$, syringe cross-sectional area $A$, and lead screw pitch $L$:
-%
-\begin{equation}
-    \text{RPM} = \frac{60Q}{AL}
-\end{equation}
+    \subsection{Lead screw speed}
 
-\subsection{Lead screw torque}
+    The lead screw speed in RPM is derived from the required flow rate $Q$, syringe cross-sectional area $A$, and lead screw pitch $L$:
+    %
+    \begin{equation}
+        \text{RPM} = \frac{60Q}{AL}
+    \end{equation}
 
-The torque required to drive the lead screw is:
-\begin{equation}
-    T = \frac{FL}{2\pi\nu}
-\end{equation}
-where $F$ is the plunger force, $L$ is the lead screw pitch, and $\nu = 0.3$ is the assumed lead screw efficiency.
+    \subsection{Lead screw torque}
 
-\subsection{Syringe plunger displacement for pressure change}
+    The torque required to drive the lead screw is:
+    \begin{equation}
+        T = \frac{FL}{2\pi\nu}
+    \end{equation}
+    where $F$ is the plunger force, $L$ is the lead screw pitch, and $\nu = 0.3$ is the assumed lead screw efficiency.
 
-The plunger displacement required to produce a pressure change $\Delta P$ over time $\Delta t$ is:
-\begin{equation}
-    \Delta x = \frac{\Delta P}{RA} \cdot \Delta t
-\end{equation}
-where $R = 8\mu l / \pi r^4$ is the fluidic resistance from Poiseuille's law, $A$ is the syringe cross-sectional area, $\mu$ is the dynamic viscosity of blood, and $l$ and $r$ are the tubing length and radius.
+    \subsection{Syringe plunger displacement for pressure change}
 
-\subsection{Tube radius change for pressure modulation}
+    The plunger displacement required to produce a pressure change $\Delta P$ over time $\Delta t$ is:
+    \begin{equation}
+        \Delta x = \frac{\Delta P}{RA} \cdot \Delta t
+    \end{equation}
+    where $R = 8\mu l / \pi r^4$ is the fluidic resistance from Poiseuille's law, $A$ is the syringe cross-sectional area, $\mu$ is the dynamic viscosity of blood, and $l$ and $r$ are the tubing length and radius.
 
-The change in tube radius required to produce a pressure change $\Delta P$ via the pinch valve is derived from Poiseuille's law:
-\begin{equation}
-    \Delta r = \sqrt[4]{\frac{8Q\mu l}{\pi \Delta P}}
-\end{equation}
+    \subsection{Tube radius change for pressure modulation}
+
+    The change in tube radius required to produce a pressure change $\Delta P$ via the pinch valve is derived from Poiseuille's law:
+    \begin{equation}
+        \Delta r = \sqrt[4]{\frac{8Q\mu l}{\pi \Delta P}}
+    \end{equation}
+\end{multicols}
 
 \begingroup
 \renewcommand{\bibfont}{\footnotesize}
