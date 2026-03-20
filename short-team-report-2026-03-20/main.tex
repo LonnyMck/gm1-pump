@@ -17,6 +17,16 @@
 \usepackage[labelfont=bf, textfont=normalfont, justification=raggedright, singlelinecheck=false, font=small]{caption}
 \usepackage{float}
 
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\bfseries}
+  {\thesection}{1em}{} 
+\titlespacing*{\section}{0pt}{1.2\baselineskip}{0.6\baselineskip}
+\titleformat{\subsection}
+  {\normalfont\itshape} 
+  {\thesubsection}{1em}{} 
+\titlespacing*{\subsection}{0pt}{1\baselineskip}{0.4\baselineskip}
+
 \addbibresource{gm1_short_team_report.bib}
 \title{
     Short Team Report\\[0.5em] 

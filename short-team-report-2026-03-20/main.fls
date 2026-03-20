@@ -143,6 +143,7 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/luatex.def
@@ -182,6 +183,7 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbr9.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrbx10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrbx10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrbx10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbr8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbr8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrmi10.tfm
@@ -193,12 +195,9 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrsy8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrbx10.tfm
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/cmbright/ts1cmbr.fd
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/tbmr10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrbx10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrbx10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbr8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrsl8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cmbright/cmbrsl8.tfm
